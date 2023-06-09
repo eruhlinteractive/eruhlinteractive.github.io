@@ -1,0 +1,14 @@
+@import "/styles/bulma/bulma.css";
+@import "/styles/sass/custom-styles.css";
+#construction-cat
+{
+  height: 50vh;
+  border-radius: 25px;
+
+}
+html
+{
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 2em;
+}

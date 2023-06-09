@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+      <title>Project Gallery - ERuhl Interactive</title>
+      <link rel="stylesheet" type="text/css" href="./styles/projectsStyle.css">
+      <link rel="icon" href="./res/favicon.ico" type="image/x-icon">
+      <link rel="shortcut icon" href="./res/favicon.ico" type="image/x-icon">
+      <script src="./src/projects.js" type="module"></script>
+  </head>
+  <body>
+    <main>
+      
+      <web-nav></web-nav>
+      
+      <h1 class="is-size-1 py-2">Project Gallery</h1>
+      <p>
+        Here are some of the projects I have worked on in the past. <b>Clicking on each display will take you to the relevant page. Enjoy!</b>
+      </p>
+      <br>
+      <br>
+      
+      <div id="featuredProjects" class="container">
+        <div class="columns is-ancestor has-text-centered" id="projectDisplay">
+
+          <!--Left Column-->
+          <div class="column is-one-third has-text-centered">
+            <project-display-mini project-name="Wander Vyrosa" project-image="res/home/vyrosa-thumb.jpg" project-link="https://wandervyrosa.com" project-description="A remake and expansion of
+            the game jam game titled &quot;Untitled Space Game&quot;" role="Gameplay Engineer, Technical/3D Artist"></project-display-mini>
+            <br>
+
+            <project-display-mini project-name="Untitled Space Game" project-image="res/home/usg-thumb.jpg" project-link="https://eruhl-interactive.itch.io/untitled-space-game" project-description="A tower defense game made for the 
+            2019 Mashup Game Jam" role="Systems Designer/Developer, 3D Artist"></project-display-mini>
+            <br>
+
+            <project-display-mini project-name="Animal Crossing Creature Tracker" project-image="res/home/actracker-thumb.jpg" project-link="https://people.rit.edu/epr4296/330/project2/app.html" 
+            project-description="A web tool for tracking creature appearances in the game Animal Crossing:New Horizons utilizing Firebase and the ACNH API"></project-display-mini>
+          </div>
+        
+          <!--Middle Column-->
+          <div class="column is-one-third has-text-centered">
+            <!--Grill daddy-->
+            <project-display-mini project-name="Grill Daddy" project-image="res/home/gd_thumb.jpg" 
+            project-link="https://daniel7972.itch.io/grill-daddy" project-description="A physics based grill-em-up made for the 2022 ROC Game Dev Summer game jam" role="Gameplay Engineer, 3D Artist"></project-display-mini>
+            <br>
+
+           <project-display-mini project-name="Office Chair Racer" project-image="res/home/office-racer-thumb.jpg" project-link="https://eruhl-interactive.itch.io/office-chair-racer" project-description="A racing game prototype I made in the Godot game engine"></project-display-mini>
+           <br>
+
+           <project-display-mini project-name="Godot Batch Edit Plugin" project-image="res/home/multiedit-thumb.png" project-link="https://github.com/eruhlinteractive/godot_multi_scene_editor" project-description="A batch scene editor plugin created for the open source Godot game engine"></project-display-mini>
+           <br>
+            
+          </div>
+
+          <!--Right Column-->
+          <div class="column is-one-third has-text-centered">
+            <project-display-mini project-name="Chicken Chaser" project-image="res/home/chickenchaser-thumb.jpg" project-link="https://youtu.be/eAfopfmwcZw" project-description="A game made from scratch using C++, DirectX11, and the
+            React3D physics engine" role="Sole Developer (academic)"></project-display-mini>
+            <br>            
+            <project-display-mini project-name="Puppy Petter" project-image="res/home/puppy-petter-thumb.jpg" project-link="https://eruhl-interactive.itch.io/puppy-petter" project-description="A quick project I made to learn the 
+            Godot game engine"></project-display-mini>
+            <br>
+            
+            <project-display-mini project-name="Cat Golf" project-image="res/home/catgolf-thumb.jpg" project-link="https://people.rit.edu/epr4296/330/project3/app.html" project-description="A project made in Javascript using a custom
+            scene management and frame-based animation framework, the Matter.js physics engine, and the Howler.js audio library"</project-display-mini>
+            <br>
+           
+
+          </div>
+
+        </div>
+      </div>
+      <!--
+      <div class="has-text-centered">
+        <h1 class="is-size-1 pt-6">This page is currently in development.</h1>
+        <h2 class="is-size-2">But for now, please feel free to check out my <a href="https://eruhl-interactive.itch.io/">Itch.io page!</a></h2>
+        <h3 class="is-size-3 pt-3">Please check back later! Thanks :)</h3>
+        <img src="res/construction-cat.jpeg" alt="Under Construction" id="construction-cat">
+      </div>
+      -->
+      <!--
+      <div class="tile is-ancestor" id="project-root">
+        <project-display-mini project-name="Wander Vyrsoa" project-image="res/home/vyrosa-thumb.png" project-link="https://eruhl-interactive.itch.io/wander-vyrosa" project-description="A remake and expansion of
+            the game jam game titled &quot;Untitled Space Game&quot;">
+          </project-display-mini>
+            <project-display-mini project-name="Puppy Petter" project-image="res/home/puppy-petter-thumb.png" project-link="https://eruhl-interactive.itch.io/puppy-petter" project-description="A quick project I made to learn the 
+            Godot game engine">
+          </project-display-mini>
+            <br>
+            <project-display-mini project-name="Untitled Space Game" project-image="res/home/usg-thumb.png" project-link="https://eruhl-interactive.itch.io/untitled-space-game" project-description="A tower defense game made for the 
+            2019 Mashup Game Jam"></project-display-mini>
+
+      </div>
+      -->
+      <!--
+      <div class="modal is-active" id="project-large-root">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+
+          <header class="modal-card-head">
+            <p class="modal-card-title" id="project-title">This is a title</p>
+            <button class="delete" id="close-project" aria-label="close"></button>
+          </header>
+          <section class="modal-card-body" id="project-body">
+            
+          </section>
+        </div>
+        -->
+      </div>
+      
+    </main>
+  </body>
+</html>

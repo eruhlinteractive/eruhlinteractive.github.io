@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home - ERuhl Interactive</title>
+    <link rel="stylesheet" type="text/css" href="styles/homeStyle.css">
+    <link rel="icon" href="res/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="res/favicon.ico" type="image/x-icon">
+    <script src="src/home.js" type="module"></script>
+  </head>
+  <body class="grid">
+    <!--
+          Hey, look at you in here inspecting the code! 
+          --Good for you!--
+          I tried to make everything as well documented as possible since the way I learn best
+          is by tinkering with other people's code to try and figure out why they made the decisions they did.
+          I hope you at least learn something useful :)
+          ** SIDEQUEST ** - Try to find the turtle hidden somewhere here on the homepage ;)
+        -->
+    <web-nav></web-nav>
+    <main class="container px-6 pt-6">
+      <div id="about">
+        <!--WIP-->
+        <!--
+        <div class="message is-danger" id="in-dev-message">
+          <div class="message-header">
+            <p>Hey there!</p>
+            <button class="delete" aria-label="delete" id="close-dev-message"></button>
+          </div>
+          <div class="message-body">
+            <p>Thanks for visiting my website! Although it is still in development, please feel free to have a look around!</p>
+          </div>
+        </div>
+        -->
+
+        <!--The good stuff :)-->
+        <h1 class="is-size-1 py-2">Hey There, I'm Ethan!</h1>
+          <div class="columns">
+            <div class="column is-three-fifths">
+            <br class="is-hidden-touch">
+            <h4 class="header is-size-4">I'm a passionate programmer and game developer with multiple years of experience in C# and C++. I have worked in Unity3D and Godot for many years in addition to other engines and toolsets.</h4>
+            <br>
+            <h4 class="header is-size-4">I love learning new skills and growing as a developer. Although coding is where I am most comfortable, I also have experience working
+              with animations, asset production, and audio design.
+            </h4>
+          </div>
+          <div class="column has-text-centered" id="portrait">
+            <div id="static-portrait" class="is-hidden-desktop" >
+              <img src="res/home/portrait.jpeg" id="portrait-img" alt="Portrait">
+              
+              <img src="res/home/turtle.png" id="turtle-surprise" class="is-hidden">
+            </div>
+            <span id="desktop-portrait-loader">
+              <p class="loader is-size-1 is-hidden-touch"></p>
+            </span>
+            <canvas width=380 height=380 id="portrait-interactive" class="is-hidden-touch" ></canvas>
+          </div>
+        </div>
+      </div>
+      <br class="is-hidden-desktop">
+
+      <!--Projects and such-->
+      <div id="featuredProjects" class="container">
+        <h1 class="is-size-1 py-5">Featured Projects</h1>
+        <div class="columns is-ancestor has-text-centered" id="projectDisplay">
+
+          <!--Left Column-->
+          <div class="column is-one-third has-text-centered">
+            <project-display-mini project-name="Wander Vyrosa" project-image="res/home/vyrosa-thumb.jpg" project-link="https://wandervyrosa.com" project-description="A remake and expansion of
+            the game jam game titled &quot;Untitled Space Game&quot;" role="Gameplay Engineer, Technical/3D Artist"></project-display-mini>
+            <br>
+
+            <project-display-mini project-name="Untitled Space Game" project-image="res/home/usg-thumb.jpg" project-link="https://eruhl-interactive.itch.io/untitled-space-game" project-description="A tower defense game made for the 
+            2019 Mashup Game Jam" role="Systems Designer/Developer, 3D Artist"></project-display-mini>
+            <br>
+
+            <project-display-mini project-name="Animal Crossing Creature Tracker" project-image="res/home/actracker-thumb.jpg" project-link="https://people.rit.edu/epr4296/330/project2/app.html" 
+            project-description="A web tool for tracking creature appearances in the game Animal Crossing:New Horizons utilizing Firebase and the ACNH API"></project-display-mini>
+          </div>
+        
+          <!--Middle Column-->
+          <div class="column is-one-third has-text-centered">
+            <!--Grill daddy-->
+            <project-display-mini project-name="Grill Daddy" project-image="res/home/gd_thumb.jpg" 
+            project-link="https://daniel7972.itch.io/grill-daddy" project-description="A physics based grill-em-up made for the 2022 ROC Game Dev Summer game jam" role="Gameplay Engineer, 3D Artist"></project-display-mini>
+            <br>
+
+           <project-display-mini project-name="Office Chair Racer" project-image="res/home/office-racer-thumb.jpg" project-link="https://eruhl-interactive.itch.io/office-chair-racer" project-description="A racing game prototype I made in the Godot game engine" role="Sole Developer"></project-display-mini>
+           <br>
+
+           <project-display-mini project-name="Godot Batch Edit Plugin" project-image="res/home/multiedit-thumb.png" project-link="https://github.com/eruhlinteractive/godot_multi_scene_editor" project-description="A batch scene editor plugin created for the open source Godot game engine"></project-display-mini>
+           <br>
+            
+          </div>
+
+          <!--Right Column-->
+          <div class="column is-one-third has-text-centered">
+            <project-display-mini project-name="Chicken Chaser" project-image="res/home/chickenchaser-thumb.jpg" project-link="https://youtu.be/eAfopfmwcZw" project-description="A game made from scratch using C++, DirectX11, and the
+            React3D physics engine"></project-display-mini>
+            <br>
+
+            <project-display-mini project-name="Puppy Petter" project-image="res/home/puppy-petter-thumb.jpg" project-link="https://eruhl-interactive.itch.io/puppy-petter" project-description="A quick project I made to learn the 
+            Godot game engine"></project-display-mini>
+            <br>
+            
+            <project-display-mini project-name="Cat Golf" project-image="res/home/catgolf-thumb.jpg" project-link="https://people.rit.edu/epr4296/330/project3/app.html" project-description="A project made in Javascript using a custom
+            scene management and frame-based animation framework, the Matter.js physics engine, and the Howler.js audio library"</project-display-mini>
+            <br>
+           
+
+          </div>
+
+        </div>
+      </div>
+
+      <!--TODO: Add recent blogposts section-->
+    </main>
+    <br>
+    <footer class="has-text-centered"> ©2021 Ethan Ruhl. All rights reserved</footer>
+  </body>
+</html>
