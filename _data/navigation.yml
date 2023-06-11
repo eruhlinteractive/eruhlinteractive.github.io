@@ -1,6 +1,11 @@
-- name: Home
-  link: /home
-- name: About
-  link: /about
-- name: Blog
-  link: /blog
+main:
+- title: Home
+  url: /home
+#- title: About
+#  url: /about
+- title: Blog
+  url: /blog
+- title: Twitter
+  url: https://twitter.com/erinteractive
+- title: Itch.io
+  url: https://eruhlinteractive.itch.io/

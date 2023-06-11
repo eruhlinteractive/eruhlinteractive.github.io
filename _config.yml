@@ -3,10 +3,20 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-include-cache
+  - jekyll-remote-theme
+  - jemoji
 
-theme: minimal-mistakes-jekyll
+remote_theme: "mmistakes/minimal-mistakes"
 minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
+# Minimal Mistakes specific
+title: ERuhl Interactive
+name: Ethan Ruhl
+url: "https://mademistakes.com"
+logo: "/assets/images/logo.png"
+search_provider: "google"
+
+permalink: /posts/:categories/:title
 
 include:
   - _pages
