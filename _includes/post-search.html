@@ -22,14 +22,38 @@ async function get_stuff()
     {
         // Remove all carriage returns
         var san = text.replaceAll("\n", "");
+        console.log(text);
         jsonData = JSON.parse(san);
+        if (jsonData.length === 0)
+        {
+            post_load_failed();
+            return;
+        }
+        console.log(jsonData);
         //console.log("Successfully got post data");
     });
 }
 
+function post_load_failed()
+{
+    let holder = document.querySelector("#search-results-holder");
+    holder.innerHTML = '';
+    let element = document.createElement("h3");
+    element.innerHTML = `Failed to load posts. Please try again later :cry:`;
+    holder.appendChild(element);
+
+    document.querySelector("#latest-posts").style.display = "none";
+    document.querySelector("#search-results-parent").style.display = "block";
+}
 
 function searchTitles()
 {
+    if (jsonData.length == 0)
+    {
+        return;
+    }
+    console.log(jsonData.length);
+
     let searchText = document.querySelector("#post-title-search").value.toLowerCase();
 
     //console.log(searchText);
@@ -40,7 +64,7 @@ function searchTitles()
         possibleTitles.push(post);
     });
 
-    //console.log(possibleTitles.length);
+    console.log(possibleTitles.length);
     // No results found
     if(possibleTitles.length == 0 && searchText != "")
     {
@@ -79,7 +103,7 @@ function searchTitles()
         let element = document.createElement("li");
         element.innerHTML = `
         <h2>
-            <a href="${postData["url"]}">${postData["title_display"]}</a>
+            <a href="${postData.url}"> ${postData["title_display"]} </a>
         </h2>
         <h4>${postData["date"]["human"]}</h4>
         ${postData["excerpt"]}

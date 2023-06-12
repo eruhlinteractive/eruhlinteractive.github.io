@@ -16,8 +16,9 @@ url: "https://mademistakes.com"
 logo: "/assets/images/logo.png"
 search_provider: "google"
 breadcrumbs: true
+read_time: true
 
-permalink: /posts/:categories/:title
+permalink: blog/:categories/:title
 
 include:
   - _pages
@@ -30,3 +31,10 @@ defaults:
     values:
       layout: single
       author_profile: true
+   # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      show_date: true
+      read_time: true
