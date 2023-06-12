@@ -15,6 +15,7 @@ name: Ethan Ruhl
 url: "https://mademistakes.com"
 logo: "/assets/images/logo.png"
 search_provider: "google"
+breadcrumbs: true
 
 permalink: /posts/:categories/:title
 

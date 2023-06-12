@@ -1,0 +1,99 @@
+<div id="post-search">
+
+    <label for="post-title-search">Search Posts:</label>
+    <input type="search" id="post-title-search">
+
+</div>
+<script>
+let jsonData;
+
+function init()
+{
+    let textInput = document.querySelector("#post-title-search");
+    textInput.oninput = searchTitles;
+    get_stuff();
+}
+
+async function get_stuff()
+{
+    const response = await fetch("/post_index.json")
+    .then((response)=> response.text()).
+    then((text)=>
+    {
+        // Remove all carriage returns
+        var san = text.replaceAll("\n", "");
+        jsonData = JSON.parse(san);
+        //console.log("Successfully got post data");
+    });
+}
+
+
+function searchTitles()
+{
+    let searchText = document.querySelector("#post-title-search").value.toLowerCase();
+
+    //console.log(searchText);
+    var possibleTitles = [];
+
+    jsonData.forEach(post => {
+        if(post["title"].includes(searchText))
+        possibleTitles.push(post);
+    });
+
+    //console.log(possibleTitles.length);
+    // No results found
+    if(possibleTitles.length == 0 && searchText != "")
+    {
+        let holder = document.querySelector("#search-results-holder");
+        holder.innerHTML = '';
+        let element = document.createElement("h3");
+        element.innerText = "No Results";
+        holder.appendChild(element);
+
+        // Update visibility
+        document.querySelector("#latest-posts").style.display = "none";
+        document.querySelector("#search-results-parent").style.display = "block";
+        return;
+    }
+     // Hide results
+    else if(possibleTitles.length === 0 || searchText == "")
+    {
+        document.querySelector("#latest-posts").style.display = "block";
+        document.querySelector("#search-results-parent").style.display = "none";
+        return;
+    }
+
+    // Limit amount
+    possibleTitles = possibleTitles.slice(0,5);
+
+    // Update visibility
+    document.querySelector("#latest-posts").style.display = "none";
+    document.querySelector("#search-results-parent").style.display = "block";
+
+    // Populate search results
+    let holder = document.querySelector("#search-results-holder");
+    holder.innerHTML = '';
+
+    possibleTitles.forEach(postData => {
+
+        let element = document.createElement("li");
+        element.innerHTML = `
+        <h2>
+            <a href="${postData["url"]}">${postData["title_display"]}</a>
+        </h2>
+        <h4>${postData["date"]["human"]}</h4>
+        ${postData["excerpt"]}
+        `;
+
+        holder.appendChild(element);
+    });
+   
+
+
+    //console.log(possibleTitles);
+}
+
+
+window.onload = init();
+
+</script>

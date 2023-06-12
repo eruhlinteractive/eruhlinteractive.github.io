@@ -17,7 +17,6 @@ I love learning new skills and growing as a developer. Although coding is where 
 <br>
 
 ## Featured Projects
-<br>
 
 <div style="display: flex; align-content: space-around; justify-content: space-between; flex-wrap: wrap">
 
