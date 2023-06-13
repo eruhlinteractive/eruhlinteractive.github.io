@@ -12,12 +12,8 @@ minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon
 # Minimal Mistakes specific
 title: ERuhl Interactive
 name: Ethan Ruhl
-url: "https://mademistakes.com"
+url: "https://eruhl-interactive.com"
 logo: "/assets/images/logo.png"
-search_provider: "google"
-breadcrumbs: true
-read_time: true
-
 permalink: blog/:categories/:title
 
 author:
@@ -29,7 +25,7 @@ author:
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/erinteractive"
     - label: "Mastodon"
-      icon: "fab fa-fw fa-link"
+      icon: "fa-brands fa-mastodon"
       url: "https://mastodon.gamedev.place/@erinteractive"
 
 include:
@@ -48,9 +44,12 @@ defaults:
       path: ""
       type: posts
     values:
+      breadcrumbs: true
       layout: post
       show_date: true
       read_time: true
       share: true
-      related: true
+      #related: true
       author_profile: true
+      #header:
+      #  overlay_color: "#1f242c"
