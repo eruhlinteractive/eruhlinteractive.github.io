@@ -1,0 +1,14 @@
+Ethan Ruhl:
+  name     : "Ethan Ruhl"
+  avatar   : "/assets/images/portrait.jpeg"
+  bio      : "Game developer and programmer who likes to experiment and make computer go brrrr"
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/erinteractive"
+    - label: "Mastodon"
+      icon: "fa fa-link"
+      url: "https://mastodon.gamedev.place/@erinteractive"
+    - label: "Itch.io"
+      icon: "fa fa-gamepad"
+      url: "https://eruhlinteractive.itch.io/"

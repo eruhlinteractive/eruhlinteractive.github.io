@@ -1,0 +1,31 @@
+<p id="tag-list"></p>
+<script>
+    let tags = [];
+
+    // Build list of tags, formatted like code
+    tags = [
+        {% for tag in page.tags %}
+        "{{ tag}}",
+        {% endfor %}
+    ];
+
+    let s = "Tags: ";
+    tags.forEach(element => {
+        let cleaned = element.replaceAll("_", " ");
+        s += `<code class="tag-name">${cleaned}</code> `;
+    });
+
+    document.querySelector("#tag-list").innerHTML = s;
+</script>
+<style>
+    .tag-name
+    {
+        background: #1f242c;
+        padding-left: 0.25em;
+        padding-right: 0.25em;
+        padding-top:0.1rem; 
+        padding-bottom:0.1rem; 
+        border-radius:4px;
+        font-size: 0.8em;
+    }
+</style>
