@@ -1,16 +1,39 @@
 <div id="post-search">
-
-    <label for="post-title-search">Search Posts:</label>
-    <input type="search" id="post-title-search">
-
+    <label for="post-title-search" id="search-label">Search Posts:</label>
+    <input type="search" id="post-title-search"></input>
+    {% include spinner.html id="search-loader" %}
+   
 </div>
+<style>
+    #post-search
+    {
+        display: flex;
+    }
+    #search-loader
+    {
+        flex-shrink: 0;
+    }
+    #search-label
+    {
+       flex-shrink: 0;
+       padding-right: 15px;
+    }
+    #post-title-search
+    {
+       
+        border-style: solid;
+        border-radius: 2px;
+    }
+</style>
 <script>
 let jsonData;
+let loader;
 
 function init()
 {
     let textInput = document.querySelector("#post-title-search");
     textInput.oninput = searchTitles;
+    loader = document.querySelector("#search-loader");
     get_stuff();
 }
 
@@ -40,14 +63,17 @@ function post_load_failed()
     holder.innerHTML = '';
     let element = document.createElement("h3");
     element.innerHTML = `Failed to load posts. Please try again later :cry:`;
-    holder.appendChild(element);
+    document.querySelector("#blog-main").appendChild(element);
+    element.style = "margin-top:0px";
+    element.classList.add("text-center");
 
     document.querySelector("#latest-posts").style.display = "none";
-    document.querySelector("#search-results-parent").style.display = "block";
+    document.querySelector("#search-results-parent").style.display = "none";
 }
 
 function searchTitles()
 {
+    
     if (jsonData.length == 0)
     {
         return;
@@ -64,7 +90,8 @@ function searchTitles()
         possibleTitles.push(post);
     });
 
-    console.log(possibleTitles.length);
+    loader.style["display"] = "block";
+    //console.log(possibleTitles.length);
     // No results found
     if(possibleTitles.length == 0 && searchText != "")
     {
@@ -77,6 +104,7 @@ function searchTitles()
         // Update visibility
         document.querySelector("#latest-posts").style.display = "none";
         document.querySelector("#search-results-parent").style.display = "block";
+        loader.style["display"] = "none";
         return;
     }
      // Hide results
@@ -84,6 +112,7 @@ function searchTitles()
     {
         document.querySelector("#latest-posts").style.display = "block";
         document.querySelector("#search-results-parent").style.display = "none";
+        loader.style["display"] = "none";
         return;
     }
 
@@ -112,7 +141,7 @@ function searchTitles()
         holder.appendChild(element);
     });
    
-
+    loader.style["display"] = "none";
 
     //console.log(possibleTitles);
 }
