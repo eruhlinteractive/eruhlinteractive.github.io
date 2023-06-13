@@ -43,11 +43,11 @@ After finishing college, I moved to a new place and wanted to set my server back
 
 # Moving to Github
 
-A while back, I had heard that GitHub had a new system that allowed users to build and host websites directly from the repositories *for free*. I honestly thought it was too good to be true, since a lot of services charged a lot of money for website hosting, let alone getting a domain. Looking into it more though, it seemed like the best way to get my website online. Although I no longer had full control over the server, I had a better idea of what I wanted for my site and it seemed to fit with the features Github was offering.
+A while back, I had heard that Github had a new system that allowed users to build and host websites directly from the repositories *for free*. I honestly thought it was too good to be true, since a lot of services charged a lot of money for website hosting, let alone getting a domain. Looking into it more though, it seemed like the best way to get my website online. Although I no longer had full control over the server, I had a better idea of what I wanted for my site and it seemed to fit with the features Github was offering.
 
 # Learning Jekyll and Liquid
 
-One thing that I was nervous about was the build system that Github uses. I had heard of HTML/CSS preprocessors and Ruby on Rails before, but still didn't know how long it would take to learn a new one. Previously I wrote my website using vanilla HTML/CSS/JS, occasionally using external libraries like [Bulma](https://bulma.io). As a result, learning the new 'tech stack' seemed like a big task that I wasn't sure I wanted to take on.
+One thing that I was nervous about was the build system that Github uses. I had heard of HTML/CSS pre-processors and Ruby on Rails before, but still didn't know how long it would take to learn a new one. Previously I wrote my website using vanilla HTML/CSS/JS, occasionally using external libraries like [Bulma](https://bulma.io). As a result, learning the new 'tech stack' seemed like a big task that I wasn't sure I wanted to take on.
 
 To my surprise, it was extremely easy to learn the basics of. I love the modular nature of includes and layouts in Jekyll, and it definitely saved a lot of time when re-building this website. Messing around with CSS was something I dreaded when building my website before (I never really got the hang of the 'cascading' part of CSS). With the help of awesome community themes for Jekyll like [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) though, I was able to get a nice looking website back up in the matter of a weekend.
 
