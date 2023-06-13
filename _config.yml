@@ -28,6 +28,21 @@ author:
       icon: "fa-brands fa-mastodon"
       url: "https://mastodon.gamedev.place/@erinteractive"
 
+twitter:
+  username: "erinteractive"
+
+og_image: /assets/images/logo.png
+
+social:
+  type:  Person
+  name:  Ethan Ruhl
+  links:
+    - "https://twitter.com/erinteractive"
+    - "https://mastodon.gamedev.place/@erinteractive"
+    - "https://www.linkedin.com/in/ethan-ruhl"
+    - "https://eruhlinteractive.itch.io/"
+
+
 include:
   - _pages
 
