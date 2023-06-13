@@ -20,6 +20,18 @@ read_time: true
 
 permalink: blog/:categories/:title
 
+author:
+  name     : "Ethan Ruhl"
+  avatar   : "/assets/images/portrait.jpeg"
+  bio      : "Game developer and programmer who likes to experiment and make computer go brrrr"
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/erinteractive"
+    - label: "Mastodon"
+      icon: "fab fa-fw fa-link"
+      url: "https://mastodon.gamedev.place/@erinteractive"
+
 include:
   - _pages
 
@@ -36,6 +48,9 @@ defaults:
       path: ""
       type: posts
     values:
+      layout: post
       show_date: true
       read_time: true
       share: true
+      related: true
+      author_profile: true
