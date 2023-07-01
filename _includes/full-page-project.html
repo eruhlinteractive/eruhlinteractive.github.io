@@ -1,0 +1,48 @@
+<div id="project-display-{{ include.title-id }}"
+    style="
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    ">
+
+    <div id="title" style="grid-area: 1 / 1 / span 1 /span 2;">
+        <h2>{{ include.title }}</h2>
+    </div>
+    <div id="{{ include.title-id }}-left-column" style="grid-area: 2 / 1 / span 1 /span 1;">
+        <div class="glide-{{ include.title-id }}" style="width: 25rem; height: calc(25rem* (9/16)); overflow:hidden;">
+            <div class="glide__track" data-glide-el="track">
+              <div class="glide__slides">
+               {% assign post-thumbnails = site.data.project-images[{{include.title-id}}] %}
+
+               {% for img-src in post-thumbnails %}
+               <img class="glide__slide" src="{{ img-src }}">
+                {% endfor %}
+              </div>
+            </div>
+        </div>
+    </div>
+    <div id="{{ include.title-id }}-right-column" style="grid-area: 2 / 2 / span 1 /span 1;">
+        <div>
+        {{ include.about | markdownify }}
+        </div>
+    </div>
+  </div>
+<script></script>
+<script type="module">
+    import 'https://unpkg.com/@glidejs/glide'
+
+    new Glide('.glide-{{ include.title-id }}',{
+    type: 'carousel',
+    startAt: 0,
+    focusAt: 'center',
+    gap: 10,
+    perView: 1,
+    peek: {
+        before: 10,
+        after: 10
+    }
+}).mount()
+
+</script>
