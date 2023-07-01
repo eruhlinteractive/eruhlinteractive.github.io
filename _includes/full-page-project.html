@@ -5,10 +5,11 @@
     // https://splidejs.com/
     new Splide( '#splide-{{include.title-id}}',{
         type  : 'loop',
+        speed : 600,
     }).mount();
     
 </script>
-<link href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css " rel="stylesheet">
+<link href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
 <style>
     .splide__slide img 
     {
@@ -34,7 +35,6 @@
     style="
     display: flex;
     flex-direction: column;
-    padding-top: 20px;
     padding-bottom: 20px;
     ">
     <div id="title">
@@ -49,7 +49,7 @@
                             {% for img-src in post-thumbnails %}
                             <li class="splide__slide">
                                 <div class="splide__slide__container">
-                                    <img src="{{ img-src }}" class="modal-displayable">
+                                    <img src="{{ img-src.src }}" class="modal-displayable" alt="{{ img-src.alt }}" desc="{{ img-src.desc }}">
                                 </div>
                             </li>
                             {% endfor %}

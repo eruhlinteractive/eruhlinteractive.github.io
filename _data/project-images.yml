@@ -1,12 +1,17 @@
 wander-vyrosa:
-  - /assets/images/project-images/wander-vyrosa/vyrosa01.png
-  - /assets/images/project-images/wander-vyrosa/vyrosa02.png
-  - /assets/images/project-images/wander-vyrosa/vyrosa03.png
-  - /assets/images/project-images/wander-vyrosa/vyrosa04.png
+  - src: /assets/images/project-images/wander-vyrosa/vyrosa01.png
+    desc: "Traveling to the next galaxy!"
+    alt: "A character traveling through the stars to the next galaxy"
 
+  - src: /assets/images/project-images/wander-vyrosa/vyrosa02.png
+  - src: /assets/images/project-images/wander-vyrosa/vyrosa03.png
 
-test-2:
-  - /assets/images/project-images/wander-vyrosa/vyrosa01.png
-  - /assets/images/project-images/wander-vyrosa/vyrosa02.png
-  - /assets/images/project-images/wander-vyrosa/vyrosa03.png
-  - /assets/images/project-images/wander-vyrosa/vyrosa04.png
+  - src: /assets/images/project-images/wander-vyrosa/vyrosa04.png
+    desc: "Chatting with the trader over a cup of coffee"
+
+anch-tracker:
+  - src: /assets/images/project-images/anch-tracker/anch-tracker-01.png
+  - src: /assets/images/project-images/anch-tracker/anch-tracker-02.png
+    desc: "User-selected tracked creatures can also be shown"
+  - src: /assets/images/project-images/anch-tracker/anch-tracker-03.png
+    desc: "Bugs are also shown! Blathers won't be pleased..."

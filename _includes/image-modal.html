@@ -59,7 +59,6 @@
 
     if (displayable.length != 0) {
       displayable.forEach((element) => {
-        console.log(element);
         element.onclick = onClick;
       });
     }
@@ -74,9 +73,8 @@
   }
 
   function onClick(e) {
-    console.log(e.target);
     document.getElementById("image-modal-img").src = e.target.src;
-    document.getElementById("image-desc").textContent = e.target.alt;
+    document.getElementById("image-desc").textContent = e.target.attributes.desc.value;
     document.getElementById("image-modal").style.display = "block";
   }
 
