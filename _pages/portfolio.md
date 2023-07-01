@@ -51,5 +51,17 @@ I have worked on a *lot* of projects professionally and personally over the past
 {% include full-page-project.html 
     title-id="anch-tracker"
     title="Animal Crossing Creature Tracker"
-    about="This project was developed for an interactive media development course that allows users to track the creatures they've caught in the game Animal Crossing: New Horizons. I am a huge fan of the Animal Crossing series, so a web utility application in vanilla HTML/CSS/JavaScript seemed like a great fit. <br><br>**Roles:** Sole Developer <br><br>[Available Here](https://people.rit.edu/epr4296/330/project2/app.html)"
+    about="This project was developed for an interactive media development course that allows users to track the creatures they've caught in the game Animal Crossing: New Horizons. I am a huge fan of the Animal Crossing series, so a web utility application in vanilla HTML/CSS/JavaScript seemed like a great fit. <br><br>**Roles:** Sole Developer <br><br>[Visit Site](https://people.rit.edu/epr4296/330/project2/app.html)"
 %}
+<br>
+# Let's Talk
+If you have any questions about my experience, feel free to reach out to me via email at [eruhlinteractive@gmail.com](mailto:eruhlinteractive@gmail.com). I'd love to hear from you!
+
+Also, feel free to check out my other work via my social media accounts! <br>
+<ul>
+    <li><i class="fa fa-twitter fa-xl" aria-hidden="true"></i> <a href="https://twitter.com/erinteractive" > Twitter @erinteractive </a> </li>
+    <li><i class="fa-brands fa-mastodon fa-xl" aria-hidden="true"></i> <a href="https://mastodon.gamedev.place/@erinteractive" > Mastodon @erinteractive</a></li>
+    <li><i class="fab fa-github fa-xl" aria-hidden="true"></i> <a href="https://github.com/eruhlinteractive" > Github @erinteractive</a></li>
+    <li><i class="fa-brands fa-linkedin fa-xl" aria-hidden="true"></i> <a href="https://linkedin.com/in/ethan-ruhl" > Linkedin</a></li>
+    <li><i class="fa-brands fa-itch-io fa-xl" aria-hidden="true"></i> <a href="https://eruhlinteractive.itch.io/"> Itch.io</a></li>
+</ul>

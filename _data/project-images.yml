@@ -9,6 +9,14 @@ wander-vyrosa:
   - src: /assets/images/project-images/wander-vyrosa/vyrosa04.png
     desc: "Chatting with the trader over a cup of coffee"
 
+chicken-chaser:
+  - src: /assets/images/project-images/chicken-chaser/chicken-chaser-01.png
+  - src: /assets/images/project-images/chicken-chaser/chicken-chaser-02.png
+
+grill-daddy:
+  - src: /assets/images/project-images/grill-daddy/grill-daddy-01.png
+  - src: /assets/images/project-images/grill-daddy/grill-daddy-02.png
+
 anch-tracker:
   - src: /assets/images/project-images/anch-tracker/anch-tracker-01.png
   - src: /assets/images/project-images/anch-tracker/anch-tracker-02.png
