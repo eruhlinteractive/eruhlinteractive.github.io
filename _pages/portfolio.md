@@ -3,6 +3,8 @@ layout: splash
 permalink: /portfolio/
 ---
 
+{% include image-modal.html %}
+
 {% include full-page-project.html 
     title-id="wander-vyrosa"
     title="Wander Vyrosa"

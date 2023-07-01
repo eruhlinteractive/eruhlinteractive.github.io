@@ -1,0 +1,84 @@
+<style>
+  #image-modal {
+    z-index: 100;
+  }
+  #shade {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    opacity: 0.5;
+    filter: alpha(opacity=60);
+  }
+  #modal-wrapper 
+  {
+    position: fixed;
+    z-index: 101;
+    top: 5%;
+    left: 12.5%;
+    width: 75%;
+    text-align: center;
+  }
+  #close-modal
+  {
+    position: fixed;
+    z-index: 105;
+    top: 2.5%;
+    right: calc(5% * (9.0/16.0));
+  }
+</style>
+<script src="https://kit.fontawesome.com/aca6f73a6e.js" crossorigin="anonymous"></script>
+<script>
+  function init() {
+    // Create modal programmatically to make sure it's on top of all other elements
+    let root = document.createElement("div");
+    root.innerHTML = `
+            <div id="shade"></div>
+            
+            <div id="modal-wrapper">
+                <div id="close-modal">
+                    <i class="fa fa-times-circle-o fa-2xl" id="circle" aria-hidden="true"></i>
+                </div>
+                <img src="" id="image-modal-img">
+                <p id="image-desc">Footer text</p>
+            </div>
+    `;
+    root.style.zIndex = 100;
+    root.id = "image-modal";
+    root.style.display = "none";
+
+    // Add to DOM
+    document.querySelector("body").appendChild(root);
+
+    // Connect events to all images with modal-displayable class
+    let displayable = [];
+    displayable = document.querySelectorAll(".modal-displayable");
+
+    if (displayable.length != 0) {
+      displayable.forEach((element) => {
+        console.log(element);
+        element.onclick = onClick;
+      });
+    }
+
+    // Set inital display
+    document.getElementById("image-modal").style.display = "none";
+    document.getElementById("image-modal").onclick = closeModal;
+  }
+
+  function closeModal() {
+    document.getElementById("image-modal").style.display = "none";
+  }
+
+  function onClick(e) {
+    console.log(e.target);
+    document.getElementById("image-modal-img").src = e.target.src;
+    document.getElementById("image-desc").textContent = e.target.alt;
+    document.getElementById("image-modal").style.display = "block";
+  }
+
+  window.onload = init;
+</script>
