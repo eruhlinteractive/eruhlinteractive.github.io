@@ -1,10 +1,10 @@
 main:
 - title: Home
   url: /home
-#- title: About
-#  url: /about
 - title: Blog
   url: /blog
+- title: Projects
+  url: /projects
 - title: Twitter
   url: https://twitter.com/erinteractive
 - title: Itch.io

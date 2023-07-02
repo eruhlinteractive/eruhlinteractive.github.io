@@ -42,6 +42,29 @@ social:
     - "https://www.linkedin.com/in/ethan-ruhl"
     - "https://eruhlinteractive.itch.io/"
 
+footer:
+  links:
+    - label: "Mastodon"
+      icon: "fa-brands fa-mastodon"
+      url: "https://mastodon.gamedev.place/@erinteractive"
+
+    - label: "Itch.io"
+      icon: "fa-brands fa-itch-io"
+      url: "https://eruhlinteractive.itch.io/"
+
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/erinteractive"
+
+    - label: "Linkedin"
+      icon: "fa-brands fa-linkedin"
+      url: "https://linkedin.com/in/ethan-ruhl"
+
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/eruhlinteractive"
+   
+
 
 include:
   - _pages

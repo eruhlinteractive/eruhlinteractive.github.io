@@ -17,6 +17,15 @@ grill-daddy:
   - src: /assets/images/project-images/grill-daddy/grill-daddy-01.png
   - src: /assets/images/project-images/grill-daddy/grill-daddy-02.png
 
+cat-golf:
+  - src: /assets/images/project-images/cat-golf/cat-golf-02.png
+  - src: /assets/images/project-images/cat-golf/cat-golf-01.png
+
+office-racer:
+  - src: /assets/images/project-images/office-racer/office-racer-01.png
+    desc: "Vroom!"
+  - src: /assets/images/project-images/office-racer/office-racer-02.png
+  
 anch-tracker:
   - src: /assets/images/project-images/anch-tracker/anch-tracker-01.png
   - src: /assets/images/project-images/anch-tracker/anch-tracker-02.png
