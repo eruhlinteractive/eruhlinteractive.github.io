@@ -4,14 +4,49 @@ permalink: /portfolio/
 ---
 {% include image-modal.html %}
 <br>
+<style>
+    #column-right
+    {
+       text-align:center; 
+       margin-left:40px;
+    }
+    #mini-projects
+    {
+        display: flex; 
+        align-content: space-around;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
 
+ @media screen and (max-width: 900px) 
+ {
+    
+    #header-intro
+    {
+        flex-direction: column;
+    }
+    #column-right
+    {
+        margin-left:0px;
+        margin-top:50px;
+    }
+ }
+</style>
 # Hey there, I'm Ethan!
 
-![image-left](/assets/images/portrait.jpeg){:.align-right style="clip-path:circle(50% at 144px 144px); margin-left:100px;"}
+<div style="display:flex" id="header-intro">
+    <div id="column-left" style="flex-basis: 50%; flex-grow:5;">
 
-I'm a game developer and passionate programmer with multiple years of experience working in all domains of game development, from engineering to art and marketing!
-
+I'm a game developer and passionate programmer with multiple years of experience working in all domains of game development, from engineering to art and marketing!  
+<br><br>
 Programming and game development have always fascinated me, so it's only fitting I made it my career. I love to work on passion projects and experiment with the unique abilities of the art form, focusing on creating engaging experiences for everyone!
+
+    </div>
+    <div id="column-right">
+        <img src="/assets/images/portrait.jpeg" style="clip-path:circle(50% at 144px 144px);" >
+    </div>
+</div>
+
 
 <br>
 # What I Bring to the Table
