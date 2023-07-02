@@ -1,7 +1,9 @@
 ---
 title: Home
 layout: splash
-permalink: /home/
+description: Learn all about ERuhl Interactive and what he's been up to! 
+slug: home
+permalink: /home
 ---
 <style>
     #column-right
@@ -50,7 +52,7 @@ I love learning new skills and growing as a developer. Although coding is where 
 
     </div>
     <div id="column-right">
-        <img src="/assets/images/portrait.jpeg" style="clip-path:circle(50% at 144px 144px);" >
+        <img src="/assets/images/portrait.jpeg" style="clip-path:circle(50% at 144px 144px);" alt="E Ruhl Interactive on a park bike">
     </div>
 </div>
 <br>

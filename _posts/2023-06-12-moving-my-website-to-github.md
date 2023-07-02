@@ -3,7 +3,7 @@ title: Moving My Website to Github Pages
 author: Ethan Ruhl
 tags: technology programming web_development
 excerpt: "My journey from self hosting my website to hosting on Github pages."
-
+slug: /moving-my-website-to-github
 header:
   image: assets/images/posts/github_apache_banner.png
   #overlay_color: "#1f242c"
