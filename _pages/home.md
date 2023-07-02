@@ -7,7 +7,7 @@ permalink: /home/
     #column-right
     {
        text-align:center; 
-       margin-left:100px;
+       margin-left:40px;
     }
     #mini-projects
     {
