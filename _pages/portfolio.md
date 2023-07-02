@@ -1,6 +1,9 @@
 ---
 layout: splash
-permalink: /portfolio/
+slug: portfolio
+description: Learn all about my experience and goals for future endeavors! 
+title: Portfolio
+permalink: /portfolio
 ---
 {% include image-modal.html %}
 <br>
@@ -96,7 +99,7 @@ Also, feel free to check out my other work via my social media accounts! <br>
 <ul>
     <li><i class="fa fa-twitter fa-xl" aria-hidden="true"></i> <a href="https://twitter.com/erinteractive" > Twitter @erinteractive </a> </li>
     <li><i class="fa-brands fa-mastodon fa-xl" aria-hidden="true"></i> <a href="https://mastodon.gamedev.place/@erinteractive" > Mastodon @erinteractive</a></li>
-    <li><i class="fab fa-github fa-xl" aria-hidden="true"></i> <a href="https://github.com/eruhlinteractive" > Github @erinteractive</a></li>
+    <li><i class="fab fa-github fa-xl" aria-hidden="true"></i> <a href="https://github.com/eruhlinteractive" > Github</a></li>
     <li><i class="fa-brands fa-linkedin fa-xl" aria-hidden="true"></i> <a href="https://linkedin.com/in/ethan-ruhl" > Linkedin</a></li>
     <li><i class="fa-brands fa-itch-io fa-xl" aria-hidden="true"></i> <a href="https://eruhlinteractive.itch.io/"> Itch.io</a></li>
 </ul>

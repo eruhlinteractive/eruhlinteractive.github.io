@@ -1,7 +1,9 @@
 ---
 layout: splash
 title: Project Gallery
-permalink: /projects/
+slug: projects
+description: A more detailed look at my previous projects and prototypes.
+permalink: /projects
 ---
 {% include image-modal.html %}
 <br>
