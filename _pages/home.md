@@ -3,22 +3,60 @@ title: Home
 layout: splash
 permalink: /home/
 ---
+<style>
+    #column-right
+    {
+       text-align:center; 
+       margin-left:100px;
+    }
+    #mini-projects
+    {
+        display: flex; 
+        align-content: space-around;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
 
+ @media screen and (max-width: 900px) 
+ {
+    
+    #header-intro
+    {
+        flex-direction: column;
+    }
+    #column-right
+    {
+        margin-left:0px;
+        margin-top:50px;
+    }
+ }
+ @media screen and (max-width: 600px)
+ {
+    #mini-projects
+    {
+        flex-direction: column;
+    }
+ }
+</style>
 <h3 class="notice--warning"><b>Notice</b>: This website is currently under heavy development and will change frequently. Check back later for more cool stuff! :grin:</h3>
 <br>
 # Hey there, I'm Ethan!
 
-![image-left](/assets/images/portrait.jpeg){:.align-right style="clip-path:circle(50% at 144px 144px); margin-left:100px;"}
-
+<div style="display:flex" id="header-intro">
+    <div id="column-left" style="flex-basis: 50%; flex-grow:5;">
 I'm a passionate programmer and game developer with multiple years of experience in C# and C++. I have worked in Unity3D and Godot for many years in addition to other engines and toolsets.
 
 I love learning new skills and growing as a developer. Although coding is where I am most comfortable, I also have experience working with animations, asset production, and audio design.
 
-<br>
+    </div>
+    <div id="column-right">
+        <img src="/assets/images/portrait.jpeg" style="clip-path:circle(50% at 144px 144px);" >
+    </div>
+</div>
 <br>
 ## Featured Projects
 
-<div style="display: flex; align-content: space-around; justify-content: space-between; flex-wrap: wrap">
+<div id="mini-projects" style="">
 
 {% include mini-project.html
     title="Wander Vyrosa"
