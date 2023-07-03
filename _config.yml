@@ -13,14 +13,14 @@ minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon
 title: ERuhl Interactive
 name: Ethan Ruhl
 url: "https://eruhl-interactive.com"
-logo: "/assets/images/logo.png"
+logo: "/assets/images/logo.webp"
 permalink: blog/:categories/:title
 tagline: A website dedicated to the works and random thoughts of Ethan Ruhl (ERuhl Interactive)
 locale: "en-US"
 
 author:
   name     : "Ethan Ruhl"
-  avatar   : "/assets/images/portrait.jpeg"
+  avatar   : "/assets/images/portrait.webp"
   bio      : "Game developer and programmer who likes to experiment and make computer go brrrr"
   links:
     - label: "Twitter"
@@ -34,7 +34,7 @@ twitter:
   username: "erinteractive"
   card: summary
 
-og_image: /assets/images/logo.png
+og_image: /assets/images/logo.webp
 
 social:
   type:  Person

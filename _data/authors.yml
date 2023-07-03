@@ -1,6 +1,6 @@
 Ethan Ruhl:
   name     : "Ethan Ruhl"
-  avatar   : "/assets/images/portrait.jpeg"
+  avatar   : "/assets/images/portrait.webp"
   bio      : "Game developer and programmer who likes to experiment and make computer go brrrr"
   links:
     - label: "Mastodon"

@@ -1,34 +1,34 @@
 wander-vyrosa:
-  - src: /assets/images/project-images/wander-vyrosa/vyrosa01.png
+  - src: /assets/images/project-images/wander-vyrosa/vyrosa01.webp
     desc: "Traveling to the next galaxy!"
     alt: "A character traveling through the stars to the next galaxy"
 
-  - src: /assets/images/project-images/wander-vyrosa/vyrosa02.png
-  - src: /assets/images/project-images/wander-vyrosa/vyrosa03.png
+  - src: /assets/images/project-images/wander-vyrosa/vyrosa02.webp
+  - src: /assets/images/project-images/wander-vyrosa/vyrosa03.webp
 
-  - src: /assets/images/project-images/wander-vyrosa/vyrosa04.png
+  - src: /assets/images/project-images/wander-vyrosa/vyrosa04.webp
     desc: "Chatting with the trader over a cup of coffee"
 
 chicken-chaser:
-  - src: /assets/images/project-images/chicken-chaser/chicken-chaser-01.png
-  - src: /assets/images/project-images/chicken-chaser/chicken-chaser-02.png
+  - src: /assets/images/project-images/chicken-chaser/chicken-chaser-01.webp
+  - src: /assets/images/project-images/chicken-chaser/chicken-chaser-02.webp
 
 grill-daddy:
-  - src: /assets/images/project-images/grill-daddy/grill-daddy-01.png
-  - src: /assets/images/project-images/grill-daddy/grill-daddy-02.png
+  - src: /assets/images/project-images/grill-daddy/grill-daddy-01.webp
+  - src: /assets/images/project-images/grill-daddy/grill-daddy-02.webp
 
 cat-golf:
-  - src: /assets/images/project-images/cat-golf/cat-golf-02.png
-  - src: /assets/images/project-images/cat-golf/cat-golf-01.png
+  - src: /assets/images/project-images/cat-golf/cat-golf-02.webp
+  - src: /assets/images/project-images/cat-golf/cat-golf-01.webp
 
 office-racer:
-  - src: /assets/images/project-images/office-racer/office-racer-01.png
+  - src: /assets/images/project-images/office-racer/office-racer-01.webp
     desc: "Vroom!"
-  - src: /assets/images/project-images/office-racer/office-racer-02.png
+  - src: /assets/images/project-images/office-racer/office-racer-02.webp
   
 anch-tracker:
-  - src: /assets/images/project-images/anch-tracker/anch-tracker-01.png
-  - src: /assets/images/project-images/anch-tracker/anch-tracker-02.png
+  - src: /assets/images/project-images/anch-tracker/anch-tracker-01.webp
+  - src: /assets/images/project-images/anch-tracker/anch-tracker-02.webp
     desc: "User-selected tracked creatures can also be shown"
-  - src: /assets/images/project-images/anch-tracker/anch-tracker-03.png
+  - src: /assets/images/project-images/anch-tracker/anch-tracker-03.webp
     desc: "Bugs are also shown! Blathers won't be pleased..."
