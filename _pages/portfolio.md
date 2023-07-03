@@ -46,7 +46,7 @@ Programming and game development have always fascinated me, so it's only fitting
 
     </div>
     <div id="column-right">
-        <img src="/assets/images/portrait.jpeg" style="clip-path:circle(50% at 144px 144px);" >
+        <img src="/assets/images/portrait.webp" style="clip-path:circle(50% at 144px 144px);" >
     </div>
 </div>
 
