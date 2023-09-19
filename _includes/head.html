@@ -16,8 +16,14 @@
 <!-- Insights analytics -->
 <script src="https://getinsights.io/js/insights.js"></script>
 <script>
+
 insights.init('SLvGPA8eHXJLLn89');
-insights.trackPages();
+insights.trackPages(
+  {
+    page: "{{ page.id }}",
+    screenSize: insights.parameters.screenType()
+  }
+);
 </script>
 
 <!-- For all browsers -->
