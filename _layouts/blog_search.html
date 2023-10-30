@@ -19,13 +19,24 @@ layout: splash
     <br>
     <div id="latest-posts">
       <h1>Latest posts</h1>
+      <hr>
       {% for post in site.posts limit:4 %}
-      <li>
-          <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-          <h4>{{ post.date | date: "%b %d, %Y" }}
-          </h4>
-          {{ post.excerpt }}
+
+      <li style="display: grid;">
+            <h2>
+              <a href="{{ post.url }}">{{ post.title }}</a>
+            </h2>
+
+            <p style="margin-top: 0px; margin-bottom: 0px;"> <strong>{{ post.date | date: "%b %d, %Y" }}</strong> <br>
+            {{ post.excerpt }}
+            </p>
+            {% if post.header.thumb %}
+              <img src="{{ post.header.thumb }}" style="height:200px;"></img>
+            {% else %}
+              <img src="{{ post.header.image }}" style="height:200px;"></img>
+            {% endif %}
       </li>
+         
       {% endfor %}
     </div>
 </div>

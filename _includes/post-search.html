@@ -134,8 +134,11 @@ function searchTitles()
         <h2>
             <a href="${postData.url}"> ${postData["title_display"]} </a>
         </h2>
-        <h4>${postData["date"]["human"]}</h4>
+        
+        <p style="margin-top: 0px; margin-bottom: 0px;">
+            <strong>${postData["date"]["human"]} </strong> <br>
         ${postData["excerpt"]}
+        </p>
         `;
 
         holder.appendChild(element);
