@@ -5,7 +5,7 @@ tags: technology programming web_development
 excerpt: "My journey from self hosting my website to hosting on Github pages."
 slug: /moving-my-website-to-github
 header:
-  image: assets/images/posts/github_apache_banner.webp
+  image: /assets/images/posts/github_apache_banner.webp
   #overlay_color: "#1f242c"
 
 author_profile: true

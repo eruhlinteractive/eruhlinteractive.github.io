@@ -52,7 +52,7 @@ I love learning new skills and growing as a developer. Although coding is where 
 
     </div>
     <div id="column-right">
-        <img src="/assets/images/portrait.webp" style="clip-path:circle(50% at 144px 144px);" alt="E Ruhl Interactive on a park bike">
+        <img src="/assets/images/portrait.png" style="width:300px; clip-path:circle(50% at 150px 150px);" alt="E-Ruhl Interactive's Avatar">
     </div>
 </div>
 <br>
