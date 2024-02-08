@@ -1,0 +1,66 @@
+<script type="module">
+    import 'https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js';
+
+    // Built with Splide
+    // https://splidejs.com/
+    new Splide( '#splide-{{include.title-id}}',{
+        type  : 'loop',
+        speed : 600,
+    }).mount();
+    
+</script>
+<link href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+<style>
+    .splide__slide img 
+    {
+        width: 100%;
+        height: auto;
+    }
+
+    #{{ include.title-id }}-wrapper
+    {
+        flex-direction: row;
+    }
+
+    /* Update flex direction for mobile devices */
+    @media screen and (max-width: 900px) {
+        #{{ include.title-id }}-wrapper
+        {
+            flex-direction: column;
+        }
+    }
+   
+</style>
+<div id="project-display-{{ include.title-id }}"
+    style="
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    ">
+    <div id="title">
+        <h2>{{ include.title }}</h2>
+    </div>
+    <div id="{{ include.title-id }}-wrapper" style="display: flex; gap: 20px;">
+        <div id="{{ include.title-id }}-left-column" style="flex-grow: 1; align-self: baseline; flex-basis: 50%; padding-top: 5px;">
+            <section class="splide" id="splide-{{ include.title-id }}" aria-label="{{include.title}} Project Display">
+                <div class="splide__track">
+                      <ul class="splide__list">
+                            {% assign post-thumbnails = site.data.project-images[{{include.title-id}}] %}
+                            {% for img-src in post-thumbnails %}
+                            <li class="splide__slide">
+                                <div class="splide__slide__container">
+                                    <img src="{{ img-src.src }}" class="modal-displayable" alt="{{ img-src.alt }}" desc="{{ img-src.desc }}" loading="lazy">
+                                </div>
+                            </li>
+                            {% endfor %}
+                      </ul>
+                </div>
+            </section>
+        </div>
+        <div id="{{ include.title-id }}-right-column" style="flex-grow: 1; flex-basis: 50%; padding-top: 0;">
+            <div>
+            {{ include.about | markdownify }}
+            </div>
+        </div>
+    </div>
+  </div>

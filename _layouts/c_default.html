@@ -1,0 +1,15 @@
+---
+layout: c_home
+---
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    {% include page-visit-tracker.html %}
+  </head>
+  <body>
+    {% include navigation.html %}
+    {{ content }}
+  </body>
+</html>

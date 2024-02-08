@@ -1,0 +1,11 @@
+main:
+- title: Home
+  url: /home
+- title: Blog
+  url: /blog
+- title: Projects
+  url: /projects
+- title: Twitter
+  url: https://twitter.com/erinteractive
+- title: Itch.io
+  url: https://eruhlinteractive.itch.io/

@@ -1,0 +1,155 @@
+<div id="post-search">
+    <label for="post-title-search" id="search-label">Search Posts:</label>
+    <input type="search" id="post-title-search"></input>
+    {% include spinner.html id="search-loader" %}
+   
+</div>
+<style>
+    #post-search
+    {
+        display: flex;
+    }
+    #search-loader
+    {
+        flex-shrink: 0;
+    }
+    #search-label
+    {
+       flex-shrink: 0;
+       padding-right: 15px;
+    }
+    #post-title-search
+    {
+       
+        border-style: solid;
+        border-radius: 2px;
+    }
+</style>
+<script>
+let jsonData;
+let loader;
+
+function init()
+{
+    let textInput = document.querySelector("#post-title-search");
+    textInput.oninput = searchTitles;
+    loader = document.querySelector("#search-loader");
+    get_stuff();
+}
+
+async function get_stuff()
+{
+    const response = await fetch("/post_index.json")
+    .then((response)=> response.text()).
+    then((text)=>
+    {
+        // Remove all carriage returns
+        var san = text.replaceAll("\n", "");
+        console.log(text);
+        jsonData = JSON.parse(san);
+        if (jsonData.length === 0)
+        {
+            post_load_failed();
+            return;
+        }
+        console.log(jsonData);
+        //console.log("Successfully got post data");
+    });
+}
+
+function post_load_failed()
+{
+    let holder = document.querySelector("#search-results-holder");
+    holder.innerHTML = '';
+    let element = document.createElement("h3");
+    element.innerHTML = `Failed to load posts. Please try again later :cry:`;
+    document.querySelector("#blog-main").appendChild(element);
+    element.style = "margin-top:0px";
+    element.classList.add("text-center");
+
+    document.querySelector("#latest-posts").style.display = "none";
+    document.querySelector("#search-results-parent").style.display = "none";
+}
+
+function searchTitles()
+{
+    
+    if (jsonData.length == 0)
+    {
+        return;
+    }
+    console.log(jsonData.length);
+
+    let searchText = document.querySelector("#post-title-search").value.toLowerCase();
+
+    //console.log(searchText);
+    var possibleTitles = [];
+
+    jsonData.forEach(post => {
+        if(post["title"].includes(searchText))
+        possibleTitles.push(post);
+    });
+
+    loader.style["display"] = "block";
+    //console.log(possibleTitles.length);
+    // No results found
+    if(possibleTitles.length == 0 && searchText != "")
+    {
+        let holder = document.querySelector("#search-results-holder");
+        holder.innerHTML = '';
+        let element = document.createElement("h3");
+        element.innerText = "No Results";
+        holder.appendChild(element);
+
+        // Update visibility
+        document.querySelector("#latest-posts").style.display = "none";
+        document.querySelector("#search-results-parent").style.display = "block";
+        loader.style["display"] = "none";
+        return;
+    }
+     // Hide results
+    else if(possibleTitles.length === 0 || searchText == "")
+    {
+        document.querySelector("#latest-posts").style.display = "block";
+        document.querySelector("#search-results-parent").style.display = "none";
+        loader.style["display"] = "none";
+        return;
+    }
+
+    // Limit amount
+    possibleTitles = possibleTitles.slice(0,5);
+
+    // Update visibility
+    document.querySelector("#latest-posts").style.display = "none";
+    document.querySelector("#search-results-parent").style.display = "block";
+
+    // Populate search results
+    let holder = document.querySelector("#search-results-holder");
+    holder.innerHTML = '';
+
+    possibleTitles.forEach(postData => {
+
+        let element = document.createElement("li");
+        element.innerHTML = `
+        <h2>
+            <a href="${postData.url}"> ${postData["title_display"]} </a>
+        </h2>
+        
+        <p style="margin-top: 0px; margin-bottom: 0px;">
+            <strong>${postData["date"]["human"]} </strong> <br>
+        ${postData["excerpt"]}
+        </p>
+        `;
+
+        holder.appendChild(element);
+    });
+   
+    loader.style["display"] = "none";
+
+    //console.log(possibleTitles);
+}
+
+
+window.onload = init();
+
+</script>

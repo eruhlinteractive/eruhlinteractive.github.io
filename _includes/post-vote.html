@@ -1,0 +1,178 @@
+<div id="post-voter">
+  <span> Did you enjoy this article?</span>
+  <span id="like-post-button" class="vote-button">
+    <i class="fa fa-thumbs-o-up fa-xl" aria-hidden="true" id="like-icon"></i>
+  </span>
+  <span id="dislike-post-button" class="vote-button">
+    <i
+      class="fa fa-thumbs-o-down fa-xl"
+      aria-hidden="true"
+      id="dislike-icon"
+    ></i>
+  </span>
+</div>
+
+<script src="https://getinsights.io/js/insights.js"></script>
+<script>
+  let pageID = "{{ page.id }}";
+  pageID = pageID.replace("/blog/", "");
+  
+
+  function init() {
+    let likeButton = document.querySelector("#like-post-button");
+    let dislikeButton = document.querySelector("#dislike-post-button");
+
+    likeButton.onclick = likePost;
+    dislikeButton.onclick = dislikePost;
+
+    let currentStorage = localStorage.getItem("postVotes");
+    if(currentStorage === null){return;};
+    let storedData = JSON.parse(currentStorage);
+
+    // Display the currently stored page like data
+    setLikeDisplay(storedData[pageID], storedData[pageID] !== null);
+
+  }
+
+  // Set the display for whether the page was liked
+  function setLikeDisplay(isLiked, hasSelection) {
+    let likeIcon = document.querySelector("#like-icon");
+    let dislikeIcon = document.querySelector("#dislike-icon");
+
+    // Display page liked
+    if (isLiked && hasSelection) {
+      likeIcon.classList.remove("fa-thumbs-o-up");
+      likeIcon.classList.add("fa-thumbs-up");
+
+      dislikeIcon.classList.remove("fa-thumbs-down");
+      dislikeIcon.classList.add("fa-thumbs-o-down");
+    }
+
+    // Display page disliked
+    else if (!isLiked && hasSelection) {
+      likeIcon.classList.add("fa-thumbs-o-up");
+      likeIcon.classList.remove("fa-thumbs-up");
+
+      dislikeIcon.classList.add("fa-thumbs-down");
+      dislikeIcon.classList.remove("fa-thumbs-o-down");
+    } else {
+      dislikeIcon.classList.remove("fa-thumbs-down");
+      dislikeIcon.classList.add("fa-thumbs-o-down");
+
+      likeIcon.classList.add("fa-thumbs-o-up");
+      likeIcon.classList.remove("fa-thumbs-up");
+    }
+  }
+
+  function getCurrentLikeValueFromStorage()
+  {
+    let currentStorage = localStorage.getItem("postVotes");
+    if (currentStorage === null) {return null;}
+    currentStorage = JSON.parse(currentStorage);
+
+    // First time rating this page
+    if (currentStorage[pageID] === null) { return null; }
+    return currentStorage[pageID];
+
+  }
+
+  function likePost() {
+    if(getCurrentLikeValueFromStorage() === true)
+    {
+      return;
+    }
+
+    setLikeDisplay(true, true);
+
+    insights.track({
+      id: "post-likes",
+      parameters: {
+        "pageId": pageID,
+      },
+    });
+
+    updateLocalStorage(true);
+  }
+
+  function dislikePost() {
+    if(getCurrentLikeValueFromStorage() === false)
+    {
+      return;
+    }
+
+    setLikeDisplay(false, true);
+    insights.track({
+      id: "page-dislikes",
+      parameters: {
+        "pageId": pageID,
+      },
+    })
+    updateLocalStorage(false);
+  }
+
+  function updateLocalStorage(wasLiked) {
+    let currentStorage = localStorage.getItem("postVotes");
+
+    //console.log(currentStorage);
+    // First time rating any page
+    if (currentStorage === null) {
+      postVotes = {};
+      postVotes[pageID] = wasLiked;
+      localStorage.setItem("postVotes", JSON.stringify(postVotes));
+      return;
+    }
+    currentStorage = JSON.parse(currentStorage);
+
+    // First time rating this page
+    if (currentStorage[pageID] === null) {
+     
+      postVotes[pageID] = wasLiked;
+      localStorage.setItem("postVotes", JSON.stringify(postVotes));
+      return;
+    }
+
+    // Value was updated
+    if (currentStorage[pageID] !== wasLiked) {
+
+      // Remove old value
+      insights.track({
+          id: currentStorage.wasLiked ? "post-likes" : "post-dislikes",
+          parameters: {
+            "pageId": pageID,
+          },
+          remove:true
+        });
+
+      // Update value and re-save
+      currentStorage[pageID] = wasLiked;
+      localStorage.setItem("postVotes", JSON.stringify(currentStorage));
+    }
+  }
+
+  window.onload = init;
+</script>
+
+<style>
+  .fa {
+    user-select: none;
+  }
+  .vote-button {
+    background: none;
+    border: none;
+    color: white;
+    user-select: none;
+  }
+  #like-post-button {
+    margin-left: 10px;
+  }
+  #dislike-post-button {
+    margin-left: 10px;
+  }
+  #post-voter {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    font-size: large;
+    font-weight: bold;
+  }
+</style>
