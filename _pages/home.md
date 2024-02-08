@@ -5,6 +5,8 @@ description: Learn all about ERuhl Interactive and what he's been up to!
 slug: home
 permalink: /home
 ---
+
+{% include page-visit-tracker.html %}
 <style>
     #column-right
     {

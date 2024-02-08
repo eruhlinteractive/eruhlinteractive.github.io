@@ -13,17 +13,19 @@
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
 </script>
 
-<!-- Insights analytics -->
-<script src="https://getinsights.io/js/insights.js"></script>
-<script>
+<script type="module">
+import {FirelightAnalytics} from "./assets/js/firelight-analytics.js";
 
-insights.init('SLvGPA8eHXJLLn89');
-insights.trackPages(
-  {
-    page: "{{ page.id }}",
-    screenSize: insights.parameters.screenType()
-  }
-);
+const firelight= new FirelightAnalytics({
+        endpoint: "https://events.eruhl-interactive.com/log-event"
+    });
+
+function logView()
+{
+  firelight.trackPageView();
+}
+
+window.onload = logView();
 </script>
 
 <!-- For all browsers -->
