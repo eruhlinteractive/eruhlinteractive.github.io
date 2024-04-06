@@ -6,7 +6,6 @@ slug: home
 permalink: /home
 ---
 
-{% include page-visit-tracker.html %}
 <style>
     #column-right
     {

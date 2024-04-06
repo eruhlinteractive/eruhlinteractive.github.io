@@ -11,12 +11,16 @@
     ></i>
   </span>
 </div>
+<script type="module">
+  import { FirelightAnalytics } from "/assets/js/firelight-analytics.js";
 
-<script src="https://getinsights.io/js/insights.js"></script>
-<script>
   let pageID = "{{ page.id }}";
   pageID = pageID.replace("/blog/", "");
   
+  const firelight = new FirelightAnalytics({
+        endpoint: '{{ site.data.firelightdata.request-origin }}'
+    });
+
 
   function init() {
     let likeButton = document.querySelector("#like-post-button");
@@ -84,12 +88,16 @@
 
     setLikeDisplay(true, true);
 
-    insights.track({
-      id: "post-likes",
-      parameters: {
-        "pageId": pageID,
-      },
-    });
+    // Track a like
+    firelight.trackEvent(
+      {
+        "event-type":"blog-like",
+         "data": {
+            "pageID": pageID
+          }
+        }
+      );
+  
 
     updateLocalStorage(true);
   }
@@ -101,18 +109,24 @@
     }
 
     setLikeDisplay(false, true);
-    insights.track({
-      id: "page-dislikes",
-      parameters: {
-        "pageId": pageID,
-      },
-    })
+
+     // Track a like
+    firelight.trackEvent(
+      {
+        "event-type":"blog-dislike",
+         "data": {
+            "pageID": pageID
+          }
+        }
+      );
+
     updateLocalStorage(false);
   }
 
   function updateLocalStorage(wasLiked) {
     let currentStorage = localStorage.getItem("postVotes");
-
+    let postVotes;
+    
     //console.log(currentStorage);
     // First time rating any page
     if (currentStorage === null) {
@@ -135,20 +149,19 @@
     if (currentStorage[pageID] !== wasLiked) {
 
       // Remove old value
-      insights.track({
-          id: currentStorage.wasLiked ? "post-likes" : "post-dislikes",
-          parameters: {
-            "pageId": pageID,
-          },
-          remove:true
-        });
+      //insights.track({
+      //    id: currentStorage.wasLiked ? "post-likes" : "post-dislikes",
+      //    parameters: {
+      //      "pageId": pageID,
+      //    },
+      //    remove:true
+      //  });
 
       // Update value and re-save
       currentStorage[pageID] = wasLiked;
       localStorage.setItem("postVotes", JSON.stringify(currentStorage));
     }
   }
-
   window.onload = init;
 </script>
 
