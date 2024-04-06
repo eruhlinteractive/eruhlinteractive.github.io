@@ -1,6 +1,5 @@
 class FirelightAnalytics
 {
-
     endpoint = undefined;
 
     constructor(config)
@@ -33,14 +32,13 @@ class FirelightAnalytics
             method: "POST",
             headers:{
                 "Content-Type": "application/json",
-                "Access-Control-Allow-Origin": "*"
             },
             body: JSON.stringify(bodyJSON)
 
         });
 
         // Something failed
-        if(response.status != 201 || response.status != 200)
+        if(response.status != 201 && response.status != 200)
         {
             console.log("Failed to log event");
         }
@@ -59,9 +57,14 @@ class FirelightAnalytics
             "path": URL,
             "windowDimensions": windowSize,
             "ref": referrer
-        }
+        };
 
-        this.sendEvent(data);
+        let payload = {
+            "event-type": "page-view",
+            "data": data
+        };
+
+        this.sendEvent(payload);
     }
 
 }
