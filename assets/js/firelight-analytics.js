@@ -11,7 +11,7 @@ class FirelightAnalytics
     async trackEvent(eventData)
     {
         let body = {
-            "event": JSON.stringify(eventData)
+            "event": eventData
         }
         
         this.sendEvent(body);
