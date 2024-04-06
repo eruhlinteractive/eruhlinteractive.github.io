@@ -20,10 +20,10 @@
     if (seconds != NaN && seconds != null) 
     {
       firelight.trackEvent({
-        "event-type": " view-duration",
-        data: {
-          pageID: "{{ page.url }}",
-          durationSeconds: seconds.toString(),
+        "event-type": "view-duration",
+        "data": {
+          "pageID": "{{ page.url }}",
+          "durationSeconds" : seconds.toString(),
         },
       });
     }
