@@ -17,12 +17,14 @@
   let pageID = "{{ page.id }}";
   pageID = pageID.replace("/blog/", "");
   
-  const firelight = new FirelightAnalytics({
-        endpoint: '{{ site.data.firelightdata.request-origin }}'
-    });
+  let firelight
 
 
   function init() {
+    firelight = new FirelightAnalytics({
+        endpoint: '{{ site.data.firelightdata.request-origin }}'
+    });
+
     let likeButton = document.querySelector("#like-post-button");
     let dislikeButton = document.querySelector("#dislike-post-button");
 
@@ -161,7 +163,7 @@
       localStorage.setItem("postVotes", JSON.stringify(currentStorage));
     }
   }
-  window.onload = init;
+  window.onload = init();
 </script>
 
 <style>
