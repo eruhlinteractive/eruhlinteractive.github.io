@@ -20,12 +20,6 @@ class FirelightAnalytics
 
     async sendEvent(newEventJSON)
     {
-        // Build the JSON body
-        let bodyJSON = 
-        {
-            "event": JSON.stringify(newEventJSON)
-        };
-
         // Send the new event to the endpoint
         const response = await fetch(this.endpoint,
         {
@@ -33,7 +27,7 @@ class FirelightAnalytics
             headers:{
                 "Content-Type": "application/json",
             },
-            body: JSON.stringify(bodyJSON)
+            body: JSON.stringify(newEventJSON)
 
         });
 
@@ -64,7 +58,7 @@ class FirelightAnalytics
             "data": data
         };
 
-        this.sendEvent(payload);
+        this.trackEvent(payload);
     }
 
 }
