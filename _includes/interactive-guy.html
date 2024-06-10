@@ -1,0 +1,29 @@
+<style>
+    #test
+    {
+        display:none;
+    }
+</style>
+<div id="test">
+    <script type="module">
+
+        import * as THREE from '/assets/apps/webdude/js/three.module.js';
+        import { APP } from '/assets/apps/webdude/js/app.js';
+        window.THREE = THREE; // Used by APP Scripts.
+
+        var loader = new THREE.FileLoader();
+        loader.load( './assets/apps/webdude/app.json', function ( text ) {
+
+            var player = new APP.Player();
+            player.load( JSON.parse( text ) );
+            player.setSize( 300, 300 );
+            player.play();
+
+            document.querySelector("#test").appendChild( player.dom );
+
+            //window.addEventListener( 'resize', function () {
+            //    player.setSize( window.innerWidth, window.innerHeight );
+            //} );
+        } );
+    </script>
+</div>

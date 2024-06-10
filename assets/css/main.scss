@@ -6,8 +6,16 @@ search: false
 @charset "utf-8";
 
 // Make changes here
-$link-color: #2c6dd3;
-$primary-color: $link-color;
+$primary-color: #244bcc;
+$secondary-color: #2c4a62;
+$accent-color: #ddc992;
+$link-color: $accent-color;
+$background-color: #1a1e24;
+
+.typed-out
+{
+    color: $accent-color;
+}
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials

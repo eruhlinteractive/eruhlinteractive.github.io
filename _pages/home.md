@@ -19,10 +19,11 @@ permalink: /home
         justify-content: space-between;
         flex-wrap: wrap;
     }
+    #portrait
+    { margin-top: 25%;}
 
  @media screen and (max-width: 900px) 
  {
-    
     #header-intro
     {
         flex-direction: column;
@@ -35,28 +36,37 @@ permalink: /home
  }
  @media screen and (max-width: 600px)
  {
+
     #mini-projects
     {
         flex-direction: column;
     }
  }
 </style>
-<h3 class="notice--warning"><b>Notice</b>: This website is currently under heavy development and will change frequently. Check back later for more cool stuff! :grin:</h3>
+{% include typed-text.html%}
 <br>
-# Hey there, I'm Ethan!
 
 <div style="display:flex" id="header-intro">
     <div id="column-left" style="flex-basis: 50%; flex-grow:5;">
+<h1>Hey there, I'm Ethan!</h1>
+
+<div class="typed-out-container">
+    <h5 class="typed-out">Game Developer</h5>
+</div>
+<br>
+<br>
 I'm a passionate programmer and game developer with multiple years of experience in C# and C++. I have worked in Unity3D and Godot for many years in addition to other engines and toolsets.
 <br><br>
 I love learning new skills and growing as a developer. Although coding is where I am most comfortable, I also have experience working with animations, asset production, and audio design.
+</div>
+<div id="column-right">
+    {% include interactive-guy.html %}
+    <img src="/assets/images/portrait.png" id="portrait" style="width:300px;  clip-path:circle(50% at 150px 150px);" alt="E-Ruhl Interactive's Avatar">
+</div>
 
-    </div>
-    <div id="column-right">
-        <img src="/assets/images/portrait.png" style="width:300px; clip-path:circle(50% at 150px 150px);" alt="E-Ruhl Interactive's Avatar">
-    </div>
 </div>
 <br>
+
 ## Featured Projects
 
 <div id="mini-projects" style="">
