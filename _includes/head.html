@@ -13,22 +13,8 @@
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
 </script>
 
-<!-- Analytics -->
-<script type="module">
-import {FirelightAnalytics} from "/assets/js/firelight-analytics.js";
-
-const firelight= new FirelightAnalytics({
-        endpoint: '{{ site.data.firelightdata.request-origin }}'
-    });
-
-function logView()
-{
-  firelight.trackPageView();
-}
-
-window.onload = logView();
-</script>
-
+<!-- Umami Analytics -->
+<script defer src="http://analytics.eruhl-interactive.com/script.js" data-website-id="51b0d30f-5074-4a0c-a4ad-2e089136b787"></script>
 {% include time-tracker.html %}
 
 <!-- For all browsers -->
