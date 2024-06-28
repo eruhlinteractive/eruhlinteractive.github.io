@@ -43,21 +43,20 @@ permalink: /home
     }
  }
 </style>
-{% include typed-text.html%}
 <br>
 
 <div style="display:flex" id="header-intro">
     <div id="column-left" style="flex-basis: 50%; flex-grow:5;">
 <h1>Hey there, I'm Ethan!</h1>
-
-<div class="typed-out-container">
-    <h5 class="typed-out">Game Developer</h5>
-</div>
+{% include typed-text.html
+    data="\"Game Developer\", \"Software Engineer\", \"Artist\""
+%}
 <br>
 <br>
-I'm a passionate programmer and game developer with multiple years of experience in C# and C++. I have worked in Unity3D and Godot for many years in addition to other engines and toolsets.
-<br><br>
-I love learning new skills and growing as a developer. Although coding is where I am most comfortable, I also have experience working with animations, asset production, and audio design.
+As a software engineer and game developer, the computer is my artistic canvas. With a focus on systems and engine development, I strive to create engaging and innovative interactive experiences for everyone to enjoy.
+<br>
+<br>
+{% include button.html link="/portfolio" text="About Me" %}
 </div>
 <div id="column-right">
     {% include interactive-guy.html %}

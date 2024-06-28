@@ -49,8 +49,7 @@ Programming and game development have always fascinated me, so it's only fitting
         <img src="/assets/images/portrait.png" style="width:300px; clip-path:circle(50% at 150px 150px);" alt="E-Ruhl Interactive's Avatar">
     </div>
 </div>
-
-
+<!-- 
 <br>
 # What I Bring to the Table
 Over the years I have worked on projects in multiple different roles, resulting in a strong working knowledge of many core responsibilities in game development. In every new project I take on, I am looking to apply my previous knowledge to make my new work the best that it can be! This experience also allows me to better communicate with individuals in other areas of game development.
@@ -61,6 +60,8 @@ That being said, my main focus (and what I studied to do :wink:) has always been
 
 # What I'm Looking For
 Being a recent graduate of a game development program, my main focus for my job search is finding a position that fosters a learning environment with other passionate individuals. There is *so* much I want to learn about game development, and I believe the best way to do that is with other awesome people who love their craft.
+ 
+-->
 
 <br>
 # My Previous Work

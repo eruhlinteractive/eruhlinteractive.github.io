@@ -12,10 +12,20 @@ $accent-color: #ddc992;
 $link-color: $accent-color;
 $background-color: #1a1e24;
 
-.typed-out
+.typewrite
 {
     color: $accent-color;
 }
-
+.animated-button-pulse
+{
+    margin-top: 3em;
+    background-color: $primary-color;
+    box-shadow: 0 0 0 0 $primary-color;
+    border:2px solid $primary-color;
+}
+.animated-button-pulse:hover
+{
+    transform: scale(110%);
+}
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
