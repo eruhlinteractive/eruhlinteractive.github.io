@@ -13,7 +13,7 @@ minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon
 title: ERuhl Interactive
 name: Ethan Ruhl
 url: "https://eruhl-interactive.com"
-logo: "/assets/images/avatar.png"
+#logo: "/assets/images/avatar.png"
 permalink: blog/:categories/:title
 tagline: A website dedicated to the works and random thoughts of Ethan Ruhl (ERuhl Interactive)
 locale: "en-US"

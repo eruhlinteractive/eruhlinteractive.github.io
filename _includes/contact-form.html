@@ -1,0 +1,29 @@
+<div>
+  <form action="https://formspree.io/f/mnnaqawz" method="POST">
+    <span id="form-contact">
+    <label>Your Name:
+        <input type="name" name="name">
+    </label>
+    <label>
+      Your email:
+      <input type="email" name="email" />
+    </label>
+</span>
+    <label>
+      Your message:
+      <textarea name="message"></textarea>
+    </label>
+    <input class= "hp" type="text" name="_gotcha" />
+    <button class="send-button" type="submit">Send</button>
+  </form>
+</div>
+<style>
+    #form-contact{
+        display: flex;
+        gap: 20px;
+    }
+    #form-contact > label
+    {
+        flex-grow: 1;
+    }
+</style>

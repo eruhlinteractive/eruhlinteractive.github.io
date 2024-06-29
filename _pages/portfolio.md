@@ -40,10 +40,9 @@ permalink: /portfolio
 <div style="display:flex" id="header-intro">
     <div id="column-left" style="flex-basis: 50%; flex-grow:5;">
 
-I'm a game developer and passionate programmer with multiple years of experience working in all domains of game development, from engineering to art and marketing!  
+I'm a game developer and passionate programmer with many years of experience working and experimenting in all domains related to game development! Programming and game development have always fascinated me, so it's only fitting I made it my career.
 <br><br>
-Programming and game development have always fascinated me, so it's only fitting I made it my career. I love to work on passion projects and experiment with the unique abilities of the art form, focusing on creating engaging experiences for everyone!
-
+ I love to work on passion projects and experiment with the unique abilities of the art form, focusing on creating engaging experiences for everyone! A lot of my experience with game development has been programming focused, but I always enjoy experimenting with the artistic domains such as art and music creation to see what I can come up with.
     </div>
     <div id="column-right">
         <img src="/assets/images/portrait.png" style="width:300px; clip-path:circle(50% at 150px 150px);" alt="E-Ruhl Interactive's Avatar">
@@ -62,6 +61,7 @@ That being said, my main focus (and what I studied to do :wink:) has always been
 Being a recent graduate of a game development program, my main focus for my job search is finding a position that fosters a learning environment with other passionate individuals. There is *so* much I want to learn about game development, and I believe the best way to do that is with other awesome people who love their craft.
  
 -->
+
 
 <br>
 # My Previous Work
@@ -93,8 +93,11 @@ I have worked on a *lot* of projects professionally and personally over the past
     about="This project was developed for an interactive media development course that allows users to track the creatures they've caught in the game Animal Crossing: New Horizons. I am a huge fan of the Animal Crossing series, so a web utility application in vanilla HTML/CSS/JavaScript seemed like a great fit. <br><br>**Roles:** Sole Developer <br><br>[Visit Site](https://people.rit.edu/epr4296/330/project2/app.html)"
 %}
 <br>
+<br>
 # Let's Talk
-If you have any questions about my experience, feel free to reach out to me via email at [eruhlinteractive@gmail.com](mailto:eruhlinteractive@gmail.com). I'd love to hear from you!
+If you have any questions about my experience, feel free to reach out to me via the form below!
+{% include contact-form.html %}
+<br>
 
 Also, feel free to check out my other work via my social media accounts! <br>
 <ul>
