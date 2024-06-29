@@ -71,6 +71,14 @@ As a software engineer and game developer, the computer is my artistic canvas. W
 <div id="mini-projects" style="">
 
 {% include mini-project.html
+    title="S.L.I.M.E"
+    description="An online multiplayer FPS created in 10 days"
+    img="/assets/images/project-thumbnails/slime-thumb.png"
+    alt="The main slime character"
+    link="https://pumpkinhousegames.itch.io/slime"
+%}
+
+{% include mini-project.html
     title="Wander Vyrosa"
     description="A commercial remake and release of the game jam game titled \"Untitled Space Game\""
     img="/assets/images/project-thumbnails/vyrosa-thumb.webp"
@@ -92,13 +100,4 @@ As a software engineer and game developer, the computer is my artistic canvas. W
     alt="A screenshot of the game Chicken Chaser"
     link="https://youtu.be/eAfopfmwcZw"
 %}
-
-{% include mini-project.html
-    title="Animal Crossing Creature Tracker"
-    description="A web tool for tracking creature appearances in the game Animal Crossing:New Horizons utilizing Firebase and the ACNH API"
-    img="/assets/images/project-thumbnails/actracker-thumb.webp"
-    alt="A screenshot of the game Chicken Chaser"
-    link="https://people.rit.edu/epr4296/330/project2/app.html"
-%}
-
 </div>

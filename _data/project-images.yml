@@ -32,3 +32,8 @@ anch-tracker:
     desc: "User-selected tracked creatures can also be shown"
   - src: /assets/images/project-images/anch-tracker/anch-tracker-03.webp
     desc: "Bugs are also shown! Blathers won't be pleased..."
+
+slime:
+  - src: /assets/images/project-images/slime/slime_01.png
+  - src: /assets/images/project-images/slime/slime_02.png
+  - src: /assets/images/project-images/slime/slime_03.png
