@@ -15,7 +15,7 @@ Please note that some were not completely finished or may not be playable, howev
 {% include full-page-project.html 
     title-id="slime"
     title="S.L.I.M.E"
-    about="S.L.I.M.E is an online multiplayer first-person-shooter made for the [2023 Hathora Multiplayer Madness jam](https://itch.io/jam/multiplayer-madness-by-hathora) in just **10 days**. The game features up to 4 players battling to upgrade their slime and escape the lab before the other players. Lobby hosting was accomplished through a Docker container running the server on the [Hathora]() platform. Players could also direct-connect to other online friends via a peer-to-peer connection.
+    about="S.L.I.M.E is an online multiplayer first-person-shooter made for the [2023 Hathora Multiplayer Madness jam](https://itch.io/jam/multiplayer-madness-by-hathora) in just **10 days**. The game features up to 4 players battling to upgrade their slime and escape the lab before the other players. Lobby hosting was accomplished through a Docker container running the server on the [Hathora](https://hathora.dev/) platform. Players could also direct-connect to other online friends via a peer-to-peer connection.
     <br><br>**Roles:** Gameplay Systems Engineer, Character Artist/Animator <br><br> [View Trailer](https://www.youtube.com/watch?v=cZcJy6PeDq4) <br> [Visit Page](https://pumpkinhousegames.itch.io/slime)"
 %}
 

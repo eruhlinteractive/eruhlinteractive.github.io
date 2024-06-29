@@ -10,7 +10,7 @@ $primary-color: #244bcc;
 $secondary-color: #2c4a62;
 $accent-color: #ddc992;
 $link-color: $accent-color;
-$background-color: #1a1e24;
+$background-color: #0d0e0f;
 
 a:hover
 {
@@ -21,7 +21,6 @@ a:visited
 {
     color: white !important;
 }
-
 .typewrite
 {
     color: $accent-color;
@@ -29,6 +28,10 @@ a:visited
 .hp
 {
     display: none;
+}
+mono
+{
+   font-family: 'Jetbrains Mono';
 }
 .send-button
 {

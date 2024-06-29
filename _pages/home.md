@@ -47,7 +47,7 @@ permalink: /home
 
 <div style="display:flex" id="header-intro">
     <div id="column-left" style="flex-basis: 50%; flex-grow:5;">
-<h1>Hey there, I'm Ethan!</h1>
+<h1>Hey there, I'm <strong>Ethan</strong>!</h1>
 {% include typed-text.html
     data="\"Game Developer\", \"Software Engineer\", \"Artist\""
 %}
@@ -65,7 +65,6 @@ As a software engineer and game developer, the computer is my artistic canvas. W
 
 </div>
 <br>
-
 ## Featured Projects
 
 <div id="mini-projects" style="">
