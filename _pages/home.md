@@ -20,7 +20,7 @@ permalink: /home
         flex-wrap: wrap;
     }
     #portrait
-    { margin-top: 25%;}
+    { margin-top: 10%;}
 
  @media screen and (max-width: 900px) 
  {
@@ -60,7 +60,7 @@ As a software engineer and game developer, the computer is my artistic canvas. W
 </div>
 <div id="column-right">
     {% include interactive-guy.html %}
-    <img src="/assets/images/portrait.png" id="portrait" style="width:300px;  clip-path:circle(50% at 150px 150px);" alt="E-Ruhl Interactive's Avatar">
+    <img src="/assets/images/portrait.png" id="portrait" style="width:400px;  clip-path:circle(50% at 200px 200px);" alt="E-Ruhl Interactive's Avatar">
 </div>
 
 </div>
