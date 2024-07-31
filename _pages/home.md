@@ -56,7 +56,8 @@ permalink: /home
 As a software engineer and game developer, the computer is my artistic canvas. With a focus on systems and engine development, I strive to create engaging and innovative interactive experiences for everyone to enjoy.
 <br>
 <br>
-{% include button.html link="/portfolio" text="About Me" %}
+<br>
+{% include modern-button.html link="/portfolio" text="About Me" %}
 </div>
 <div id="column-right">
     {% include interactive-guy.html %}
