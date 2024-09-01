@@ -65,11 +65,16 @@ layout: default
         {% include page__taxonomy.html %}
         {% include page__date.html %}
         {% include post_tags.html %}
-        <br>
-        {% include post-vote.html %}
-      </footer>
 
-      {% if page.share %}{% include social-share.html %}{% endif %}
+        {% if page.share %}
+        {% include social-share.html %}
+        {% endif %}
+        {% include post-vote.html %}
+        <div>
+          {% include utterances-comments.html %}
+        </div>
+        
+      </footer>
 
       {% include post_pagination.html %}
     </div>
@@ -78,7 +83,6 @@ layout: default
       {% include comments.html %}
     {% endif %}
   </article>
-
   {% comment %}<!-- only show related on a post page when `related: true` -->{% endcomment %}
   {% if page.id and page.related and site.related_posts.size > 0 %}
     <div class="page__related">
