@@ -75,6 +75,155 @@ strong
 {
     box-shadow: 0 0 0 4px $accent-color;
 }
+// Project cards
+.mini-project {
+    position: relative;
+    max-width: 250px;
+    color: #fff;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  .mini-project:hover {
+    transform: translateY(-20px);
+  }
 
+  .mini-project>a>img:hover
+  {
+    box-shadow: 
+    inset  0px 0px 40px $primary-color,
+    0px 0px 40px $primary-color !important;
+  }
+.masthead
+{
+    background-color: $background-color;
+}
+#footer
+{
+    margin-top: 0;
+}
+.page__content
+{
+    background-color: $background-color !important;
+    z-index: 0;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+// Background
+/* Config */
+$color-bg: #ffffff00;
+$color-particle: #fff;
+$spacing: 2560px;
+$time-1: 100s;
+$time-2: 120s;
+$time-3: 180s;
+$time-4: 200s;
+
+/* mixins */
+@function particles($max) {
+  $val: 0px 0px $color-particle;
+  @for $i from 1 through $max {
+    $val: #{$val}, random($spacing)+px random($spacing)+px $color-particle;
+  }
+  @return $val;
+}
+
+@mixin particles($max) {
+  box-shadow: particles($max);
+  border-radius: 50%;
+}
+
+.page-bg, .animation-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.animation-wrapper
+{
+    z-index: -1;
+}
+
+.page-bg {
+  background: $color-bg;
+  background-blend-mode: screen;
+  background-size: cover;
+  filter: grayscale(100%);
+  z-index: -100;
+}
+
+.particle, .particle:after {
+  background: transparent;
+}
+
+.particle:after {
+  position: absolute;
+  content: "";
+  top: $spacing;
+}
+
+.particle-1 {
+  animation: animParticle $time-1 linear infinite;
+  @include particles(1000);
+  height: 2px;
+  width: 2px;
+}
+
+.particle-1:after {
+  @include particles(900);
+  height: 2px;
+  width: 2px;
+}
+
+.particle-2 {
+  animation: animParticle $time-2 linear infinite;
+  @include particles(800);
+  height: 2px;
+  width: 2px;
+}
+
+.particle-2:after {
+  @include particles(500);
+  height: 3px;
+  width: 3px;
+}
+
+.particle-3:after {
+  @include particles(1100);
+  height: 3px;
+  width: 3px;
+  border-radius: 50%;
+}
+
+.particle-4 {
+  animation: animParticle $time-4 linear infinite;
+  @include particles(1200);
+  height: 1px;
+  width: 1px;
+}
+
+.particle-4:after {
+  @include particles(700);
+  height: 1px;
+  width: 1px;
+}
+
+@keyframes animParticle {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY($spacing * 1);
+  }
+}
+
+.page-wrapper {
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+}
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials

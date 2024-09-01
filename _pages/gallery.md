@@ -6,6 +6,8 @@ description: A more detailed look at my previous projects and prototypes.
 permalink: /projects
 ---
 {% include image-modal.html %}
+
+{% include stars-background.html %}
 <br>
 # Project Gallery
 Below are a lot of the projects I have worked on previously in various roles. 

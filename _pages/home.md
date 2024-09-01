@@ -43,8 +43,10 @@ permalink: /home
     }
  }
 </style>
-<br>
 
+{% include stars-background.html %}
+
+<br>
 <div style="display:flex" id="header-intro">
     <div id="column-left" style="flex-basis: 50%; flex-grow:5;">
 <h1>Hey there, I'm <strong>Ethan</strong>!</h1>
