@@ -4,6 +4,7 @@ slug: portfolio
 description: Learn all about my experience and goals for future endeavors! 
 title: Portfolio
 permalink: /portfolio
+show-stars: true
 ---
 {% include image-modal.html %}
 <br>

@@ -20,7 +20,7 @@ locale: "en-US"
 
 author:
   name     : "Ethan Ruhl"
-  avatar   : "/assets/images/avatar.png"
+  avatar   : "/assets/images/portrait.png"
   bio      : "Game developer and programmer who likes to experiment and make computer go brrrr"
   links:
     - label: "Twitter"
@@ -34,7 +34,7 @@ twitter:
   username: "erinteractive"
   card: summary
 
-og_image: /assets/images/avatar.png
+og_image: /assets/images/portrait.png
 
 social:
   type:  Person

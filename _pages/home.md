@@ -4,6 +4,7 @@ layout: splash
 description: Learn all about ERuhl Interactive and what he's been up to! 
 slug: home
 permalink: /home
+show-stars: true
 ---
 
 <style>
@@ -36,15 +37,12 @@ permalink: /home
  }
  @media screen and (max-width: 600px)
  {
-
     #mini-projects
     {
         flex-direction: column;
     }
  }
 </style>
-
-{% include stars-background.html %}
 
 <br>
 <div style="display:flex" id="header-intro">
@@ -63,7 +61,7 @@ As a software engineer and game developer, the computer is my artistic canvas. W
 </div>
 <div id="column-right">
     {% include interactive-guy.html %}
-    <img src="/assets/images/portrait.png" id="portrait" style="width:400px;  clip-path:circle(50% at 200px 200px);" alt="E-Ruhl Interactive's Avatar">
+    <img src="/assets/images/portrait.png" id="portrait" style="width:400px;" alt="E-Ruhl Interactive's Avatar">
 </div>
 
 </div>
