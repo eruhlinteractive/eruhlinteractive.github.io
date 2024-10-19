@@ -5,6 +5,7 @@ tags: technology game_development tutorials
 excerpt: "How I increased my game development by building one simple habit."
 slug: /one-habit-to-level-up-your-game-development
 header:
+  og_image: /assets/images/posts/taking_notes_header.webp
   #image: /assets/images/posts/taking_notes_header.webp
   thumb: /assets/images/posts/taking_notes_header.webp
   #overlay_color: "#1f242c"
@@ -40,7 +41,7 @@ Ultimately, documenting your ideas and discoveries allows you to more efficientl
 
 Cool, you've decided you want to start taking notes while working on your game projects. Awesome! Naturally, the next question is "well what should I even take notes on?". While this will ultimately vary from person to person, I've found a few key areas I like to keep track of in my own notes:
 
-*Note (heh): This is not an exhaustive list. Experiment and see what works best for you!*
+<p class="notice--primary">Note (heh): This is not an exhaustive list. Experiment and see what works best for you!</p>
 
 ### Ideation Notes 🧠
 
