@@ -23,7 +23,7 @@ Since I've now graduated college and have a regular nine-to-five programming job
 
 Split keyboards had been something that I often saw and thought "huh, that's neat" but never envisioned myself owning let alone building one. However, [this video from Joe Scotto](https://www.youtube.com/watch?v=FJgvi7WShxY) sent me down a rabbit hole on the world of custom split keyboards. There was a lot that I hadn't thought about, such as the low space footprint and ability to place each half wherever it was most comfortable. Needless to say, I decided I needed to build one myself.
 
-<figure>
+<figure class="blog-img">
     <img src="/assets/images/posts/unique_keyboard.jpg" alt="A heatmap depicting the most commonly used letters on a US QWERTY keyboard" loading="lazy">
     <figcaption>The world of split keyboards has given life to some very... unique creations, such as the <a href="https://github.com/adereth/dactyl-keyboard">Dactyl</a> design <a href="https://www.geeetech.com/blog/2018/02/diy-3d-printed-ergonomic-keyboards-for-the-uncompromising-typist/">(Source)</a></figcaption>
 </figure>
@@ -34,7 +34,7 @@ In addition to the mechanical challenges, there were a few other issues I had to
 
 The need to learn new muscle memory was made worse by using a standard full keyboard at work. Since I would be constantly swapping between keyboard layouts, my learning progress would be significantly slowed. To make matters worse, the significant reduction in keys (almost 30%) and additional complexity of needing to use layers made it seem like an even bigger challenge to make the switch.
 
-<figure>
+<figure class="blog-img">
     <img src="/assets/images/posts/qwerty_heatmap_keybrio.png" alt="A heatmap depicting the most commonly used letters on a US QWERTY keyboard" loading="lazy">
     <figcaption>QWERTY isn't super efficient for US typing <a href="https://www.keybr.com/layouts">(Source)</a></figcaption>
 </figure>
@@ -47,7 +47,7 @@ After deciding to commit to the learning task, my next question was "where do I 
 
 The next big decision I needed to make was what kind of switches I wanted to get. Although I was most familiar with the MX and Gateron switches (having Gateron browns on my K2), I decided to try the Kailh Choc low profile switches instead. Although I wasn't super sure I would like them, the idea of a lower profile board seemed appealing and the quieter switches would definitely make my girlfriend happy. After doing some research I ended up going with the linear red switches, since they seemed like a good balance of tactile feel and actuation weight.
 
-<figure>
+<figure class="blog-img">
     <img src="/assets/images/posts/choc_vs_mx.png" alt="A Kailh choc low-profile red keyswitch next to a Cherry MX Red keyswitch" loading="lazy">
     <figcaption>A Kailh choc low-profile switch (left) next to a Cherry MX switch (right)</figcaption>
 </figure>
@@ -63,7 +63,7 @@ Once I got everything soldered to the board, it was time for the moment of truth
 
 And it worked! Well, mostly- there were a few switches that weren't working properly on first try. Luckily it was just a matter of re-flowing the hotswap sockets and diodes, after which everything was working correctly.
 
-<figure>
+<figure class="blog-img">
     <img src="/assets/images/posts/corne_hardware.png" alt="The Corne circuit board with all the hardware mounted" loading="lazy">
     <figcaption>The final board with all the hardware soldered and mounted (minus the OLED screens and LEDs, which came later)</figcaption>
 </figure>
@@ -72,7 +72,7 @@ The next hurdle was printing the case on my Ender3 v2. As I mentioned before, I 
 
 The culprit seemed to be a clogged hot-end and a loose extruder, as well as a tangled filament spool on one occasion. After a lot of Youtube tutorials and confusion, I was able to get the issues resolved and the case printed. Overall the printing of the case took approximately 14 hours, but it was well worth the wait.
 
-<figure>
+<figure class="blog-img">
     <video src="/assets/videos/corne_case_print.mp4" width="100%" autoplay muted loop alt="A timelapse of printing the keyboard case" loading="lazy"></video>
     <figcaption>The total print time for both halves was approx. 22 hours</figcaption>
 </figure>
@@ -81,7 +81,7 @@ As I mentioned earlier, I eventually caved and purchased OLED screens and lighti
 
 The first one I did went great. I initially soldered it on incorrectly but luckily I was able to remove it and re-solder it. The third time I wasn't so lucky. The LED had shifted as I was soldering it without my noticing, so the right side wasn't touching the pads on the PCB. Unfortunately, I didn't notice this until I had soldered all four pads, at which point it was too late. When I attempted to de-solder the LED I managed do destroy the LED *AND* rip one of the connection pads off of the PCB. Yikes.
 
-<figure>
+<figure class="blog-img">
     <img src="/assets/images/posts/corne_bridged_pad.png" alt="The Corne circuit board with a bridged LED pad" loading="lazy">
     <figcaption>Bridging the borked pad (circled) seemed to save the rest of the board</figcaption>
 </figure>
@@ -94,7 +94,7 @@ Overall, building this keyboard was a lot of fun! Despite all the challenges, I 
 
 Though only time will tell if having a split keyboard will help prevent wrist injury, for now it's at least more comfy and fun to type with. There's still work to do to customize the layers to what works best for me, but that's a task I plan to accomplish as I become more acquainted with the new layout.
 
-<figure>
+<figure class="blog-img">
     <img src="/assets/images/posts/corne-final.jpg" alt="The finished keyboard" loading="lazy">
     <figcaption>The finished keyboard build</figcaption>
 </figure>

@@ -23,12 +23,21 @@ author:
   avatar   : "/assets/images/portrait.png"
   bio      : "Game developer and programmer who likes to experiment and make computer go brrrr"
   links:
+    - label: "Bluesky"
+      icon: "fa-brands fa-bluesky"
+      url: "https://bsky.app/profile/eruhlinteractive.bsky.social"
+      
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/erinteractive"
-    - label: "Mastodon"
-      icon: "fa-brands fa-mastodon"
-      url: "https://mastodon.gamedev.place/@erinteractive"
+
+    - label: "Itch.io"
+      icon: "fa-brands fa-itch-io"
+      url: "https://eruhlinteractive.itch.io/"
+
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/eruhlinteractive"
 
 twitter:
   username: "erinteractive"
@@ -40,16 +49,16 @@ social:
   type:  Person
   name:  Ethan Ruhl
   links:
+    - "https://bsky.app/profile/eruhlinteractive.bsky.social"
     - "https://twitter.com/erinteractive"
-    - "https://mastodon.gamedev.place/@erinteractive"
     - "https://www.linkedin.com/in/ethan-ruhl"
     - "https://eruhlinteractive.itch.io/"
 
 footer:
   links:
-    - label: "Mastodon"
-      icon: "fa-brands fa-mastodon"
-      url: "https://mastodon.gamedev.place/@erinteractive"
+    - label: "Bluesky"
+      icon: "fa-brands fa-bluesky"
+      url: "https://bsky.app/profile/eruhlinteractive.bsky.social"
 
     - label: "Itch.io"
       icon: "fa-brands fa-itch-io"

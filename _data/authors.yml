@@ -3,9 +3,9 @@ Ethan Ruhl:
   avatar   : "/assets/images/portrait.png"
   bio      : "Game developer and programmer who likes to experiment and make computer go brrrr"
   links:
-    - label: "Mastodon"
-      icon: "fa-brands fa-mastodon"
-      url: "https://mastodon.gamedev.place/@erinteractive"
+    - label: "Bluesky"
+      icon: "fa-brands fa-bluesky"
+      url: "https://bsky.app/profile/eruhlinteractive.bsky.social"
       
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"

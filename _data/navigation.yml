@@ -5,7 +5,7 @@ main:
   url: /blog
 - title: Projects
   url: /projects
-- title: Twitter
-  url: https://twitter.com/erinteractive
+- title: Bluesky
+  url: https://bsky.app/profile/eruhlinteractive.bsky.social
 - title: Itch.io
   url: https://eruhlinteractive.itch.io/

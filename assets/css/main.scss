@@ -11,8 +11,18 @@ $secondary-color: #2c4a62;
 $accent-color: #ddc992;
 $link-color: $accent-color;
 $background-color: #0d0e0f;
+$italics-color: #6687f3;
 
+.blog-img
+{
+  margin-top: 0px !important;
+  margin-bottom: 15px !important;
+}
 
+em
+{
+  color: $italics-color;
+}
 a:hover
 {
     color: white;
