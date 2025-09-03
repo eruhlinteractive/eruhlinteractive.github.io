@@ -10,12 +10,12 @@ remote_theme: "mmistakes/minimal-mistakes"
 minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Minimal Mistakes specific
-title: ERuhl Interactive
+title: Sleepy Rock Games
 name: Ethan Ruhl
-url: "https://eruhl-interactive.com"
+url: "https://sleepyrockgames.com"
 #logo: "/assets/images/avatar.png"
 permalink: blog/:categories/:title
-tagline: A website dedicated to the works and random thoughts of Ethan Ruhl (ERuhl Interactive)
+tagline: A website containing the projects and random thoughts of Ethan Ruhl (aka Sleepy Rock Games)
 locale: "en-US"
 
 author:
@@ -25,7 +25,7 @@ author:
   links:
     - label: "Bluesky"
       icon: "fa-brands fa-bluesky"
-      url: "https://bsky.app/profile/eruhlinteractive.bsky.social"
+      url: "https://bsky.app/profile/sleepyrockgames.bsky.social"
       
     - label: "Itch.io"
       icon: "fa-brands fa-itch-io"
@@ -33,10 +33,10 @@ author:
 
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/eruhlinteractive"
+      url: "https://github.com/sleepyrockgames"
 
 twitter:
-  username: "erinteractive"
+  #username: ""
   card: summary
 
 og_image: /assets/images/portrait.png
@@ -45,19 +45,19 @@ social:
   type:  Person
   name:  Ethan Ruhl
   links:
-    - "https://bsky.app/profile/eruhlinteractive.bsky.social"
+    - "https://bsky.app/profile/sleepyrockgames.bsky.social"
     - "https://www.linkedin.com/in/ethan-ruhl"
-    - "https://eruhlinteractive.itch.io/"
+    - "https://sleepyrockgames.itch.io/"
 
 footer:
   links:
     - label: "Bluesky"
       icon: "fa-brands fa-bluesky"
-      url: "https://bsky.app/profile/eruhlinteractive.bsky.social"
+      url: "https://bsky.app/profile/sleepyrockgames.bsky.social"
 
     - label: "Itch.io"
       icon: "fa-brands fa-itch-io"
-      url: "https://eruhlinteractive.itch.io/"
+      url: "https://sleepyrockgames.itch.io/"
 
     - label: "Linkedin"
       icon: "fa-brands fa-linkedin"
@@ -65,7 +65,7 @@ footer:
 
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/eruhlinteractive"
+      url: "https://github.com/sleepyrockgames"
    
 
 

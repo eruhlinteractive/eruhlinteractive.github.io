@@ -1,7 +1,7 @@
 ---
 title: Home
 layout: splash
-description: Learn all about ERuhl Interactive and what he's been up to! 
+description: Learn all about Sleepy Rock Games and what he's been up to! 
 slug: home
 permalink: /home
 show-stars: true
