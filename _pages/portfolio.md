@@ -72,7 +72,7 @@ I have worked on a *lot* of projects professionally and personally over the past
     title-id="wander-vyrosa"
     title="Wander Vyrosa"
     about="Wander Vyrosa is a rogue-lite tower defense game set on fully traversable planets. Inspired by games such as Super Mario Galaxy and Bloons TD,
-    this project started as a game jam game titled [Untitled Space Game](https://eruhlinteractive.itch.io/untitled-space-game). Wander Vyrosa was built in the open-source Godot Game engine using C# and GDScript by a small team and published on Steam in March 2023.<br><br>   **Roles**: Gameplay Programmer, Systems Programmer, 2D/3D Artist, Producer, Audio Designer/Engineer<br> <br> [Visit Wander Vyrosa Website](https://wandervyrosa.com/)" 
+    this project started as a game jam game titled [Untitled Space Game](https://sleepyrockgames.itch.io/untitled-space-game). Wander Vyrosa was built in the open-source Godot Game engine using C# and GDScript by a small team and published on Steam in March 2023.<br><br>   **Roles**: Gameplay Programmer, Systems Programmer, 2D/3D Artist, Producer, Audio Designer/Engineer<br> <br> [Visit Wander Vyrosa Website](https://wandervyrosa.com/)" 
 %}
 
 {% include full-page-project.html 
@@ -103,7 +103,7 @@ If you have any questions about my experience, feel free to reach out to me via 
 Also, feel free to check out my other work via my social media accounts! <br>
 <ul>
     <li><i class="fa-brands fa-mastodon fa-xl" aria-hidden="true"></i> <a href="https://mastodon.gamedev.place/@erinteractive" > Mastodon @erinteractive</a></li>
-    <li><i class="fab fa-github fa-xl" aria-hidden="true"></i> <a href="https://github.com/eruhlinteractive" > Github</a></li>
+    <li><i class="fab fa-github fa-xl" aria-hidden="true"></i> <a href="https://github.com/sleepyrockgames" > Github</a></li>
     <li><i class="fa-brands fa-linkedin fa-xl" aria-hidden="true"></i> <a href="https://linkedin.com/in/ethan-ruhl" > Linkedin</a></li>
-    <li><i class="fa-brands fa-itch-io fa-xl" aria-hidden="true"></i> <a href="https://eruhlinteractive.itch.io/"> Itch.io</a></li>
+    <li><i class="fa-brands fa-itch-io fa-xl" aria-hidden="true"></i> <a href="https://sleepyrockgames.itch.io/"> Itch.io</a></li>
 </ul>

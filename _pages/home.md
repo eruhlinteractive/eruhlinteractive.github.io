@@ -56,12 +56,14 @@ show-stars: true
 As a software engineer and game developer, the computer is my artistic canvas. With a focus on systems and engine development, I strive to create engaging and innovative interactive experiences for everyone to enjoy.
 <br>
 <br>
+
+
 <br>
 {% include modern-button.html link="/portfolio" text="About Me" %}
 </div>
 <div id="column-right">
     {% include interactive-guy.html %}
-    <img src="/assets/images/portrait.png" id="portrait" style="width:400px;" alt="E-Ruhl Interactive's Avatar">
+    <img src="/assets/images/portrait.png" id="portrait" style="width:400px;" alt="Sleepy Rock's Avatar">
 </div>
 
 </div>
@@ -91,13 +93,5 @@ As a software engineer and game developer, the computer is my artistic canvas. W
     img="/assets/images/project-thumbnails/gd_thumb.webp"
     alt="The grill from the game Grill Daddy"
     link="https://daniel7972.itch.io/grill-daddy"
-%}
-
-{% include mini-project.html
-    title="Chicken Chaser"
-    description="A game made from scratch using C++, DirectX11, and the React3D physics engine"
-    img="/assets/images/project-thumbnails/chickenchaser-thumb.webp"
-    alt="A screenshot of the game Chicken Chaser"
-    link="https://youtu.be/eAfopfmwcZw"
 %}
 </div>
