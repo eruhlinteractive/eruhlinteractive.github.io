@@ -1,9 +1,17 @@
-<div style="flex-grow:1; margin: 10px; max-width: 250px;" class="mini-project">
-    <h3 class="text-center">{{ include.title }} </h3>
-    <a href="{{ include.link }}" class="undeco-link">
-        <img src="{{ include.img }}" alt="{{ include.alt }}" class="align-center" style="width: 250px; border-radius: 10px;" >
-    </a>
-    <br>
-    <p class="text-center">{{ include.description }}</p>
-    <div id="mini-project-background"></div>
+<!--Needed to use the link arg in the button include-->
+{% capture project_link %}{{include.link}}{% endcapture %}
+<div class="flip-card">
+    <div class="flip-card-inner">
+        <div class="flip-card-front">
+            <img src="{{ include.img }}" alt="{{ include.alt }}">
+        </div>
+        <div class="flip-card-back">
+           
+            <h3 class="title">{{ include.title }}</h3>
+            <p>{{ include.description }}</p>
+            <div>
+                {% include buttons/toon-button.html link=project_link label="Learn More" class='primary' %}
+            </div>
+        </div>
+    </div>
 </div>

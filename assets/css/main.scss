@@ -6,28 +6,25 @@ search: false
 @charset "utf-8";
 
 // Make changes here
-$primary-color: #fcbb8d;
-$secondary-color: #ff9c7a;
-$accent-color: #88a9f6;
-$link-color: $accent-color;
-$background-color: #181818;
-$italics-color: #ff9c7a;
-$text-color: #e9ddde;
+@import "theme-vars";
+@import "cards/gradient-card";
+@import "stars-background";
+@import "buttons/toon-button";
+@import "cards/mini-project-card";
 
 .blog-img
 {
   margin-top: 0px !important;
   margin-bottom: 15px !important;
 }
-
 em
 {
   color: $italics-color;
 }
 a:hover
 {
-    color: white;
-    text-decoration: none !important;
+  color: white;
+  text-decoration: none !important;
 }
 a:visited
 {
@@ -35,11 +32,11 @@ a:visited
 }
 .typewrite
 {
-    color: $accent-color;
+  color: $primary-color;
 }
 .hp
 {
-    display: none;
+  display: none;
 }
 mono
 {
@@ -47,170 +44,64 @@ mono
 }
 .send-button
 {
-    color: white;
-    background-color: $primary-color;
-    border-radius: 5px;
-    padding: 5px 10px;
-    margin-top: 1em;
-    border: $primary-color;    
+  color: white;
+  background-color: $primary-color;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-top: 1em;
+  border: $primary-color;    
 }
 // Coloring for typing/bold
 strong
 {
-    color: #ddc992;
+  color: $accent-color;
 }
 
 // Don't decorate links
 .undeco-link:visited
 {
-    text-decoration: none;
+  text-decoration: none;
 }
 .undeco-link
 {
-    text-decoration: none;
+  text-decoration: none;
 }
-// Modern button
-.modern-button
-{
-    color: white;
-    box-shadow: 0 0 0 2px $primary-color;
-}
-.modern-button svg 
-{
-    fill: $primary-color;
-}
-.modern-button .circle 
-{
-    background-color: $accent-color;
-}
-.modern-button:active 
-{
-    box-shadow: 0 0 0 4px $accent-color;
-}
+
 // Project cards
 .mini-project {
-    position: relative;
-    max-width: 250px;
-    color: #fff;
-    transition: 0.5s;
-    cursor: pointer;
-  }
-  .mini-project:hover {
-    transform: translateY(-20px);
-  }
+  position: relative;
+  max-width: 250px;
+  color: #fff;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.mini-project:hover {
+  transform: translateY(-20px);
+}
 
-  .mini-project>a>img:hover
-  {
-    box-shadow: 
-    inset  0px 0px 40px $primary-color,
-    0px 0px 40px $primary-color !important;
-  }
+.mini-project>a>img:hover
+{
+  box-shadow: 
+  inset  0px 0px 40px $primary-color,
+  0px 0px 40px $primary-color !important;
+}
 .masthead
 {
-    background-color: $background-color;
+  background-color: $background-color;
 }
 #footer
 {
-    margin-top: 0;
+  margin-top: 0;
 }
 .page__content
 {
-    background-color: $background-color !important;
-    z-index: 0;
-    margin-left: -20px;
-    margin-right: -20px;
-    padding-left: 50px;
-    padding-right: 50px;
+  background-color: $background-color !important;
+  z-index: 0;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
-
-// Star background
-// Original source: https://codepen.io/sarazond/pen/LYGbwj
-
-#stars-wrapper
-{
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  z-index: -100;
-}
-
-// n is number of stars required
-@function multiple-box-shadow ($n) {
-  $value: '#{random(2000)}px #{random(2000)}px #FFF';
-  @for $i from 2 through $n {
-    $value: '#{$value} , #{random(2000)}px #{random(2000)}px #FFF';
-  }
-
-  @return unquote($value);
-}
-$shadows-small: multiple-box-shadow(700);
-$shadows-medium: multiple-box-shadow(200);
-$shadows-big: multiple-box-shadow(100);
-
-#stars {
-  width: 1px;
-  height: 1px;
-  background: transparent;
-  box-shadow: $shadows-small;
-  animation: animStar 50s linear infinite;
-
-  &:after {
-    content: " ";
-    position: absolute;
-    top: 2000px;
-    width: 1px;
-    height: 1px;
-    background: transparent;
-    box-shadow: $shadows-small;
-  }
-}
-#stars2 {
-  width: 2px;
-  height: 2px;
-  background: transparent;
-  box-shadow: $shadows-medium;
-  animation: animStar 100s linear infinite;
-
-  &:after {
-    content: " ";
-    position: absolute;
-    top: 2000px;
-    width: 2px;
-    height: 2px;
-    background: transparent;
-    box-shadow: $shadows-medium;
-  }
-
-}
-#stars3 {
-  width: 3px;
-  height: 3px;
-  background: transparent;
-  box-shadow: $shadows-big;
-  animation: animStar 150s linear infinite;
-  
-  &:after {
-    content: " ";
-    position: absolute;
-    top: 2000px;
-    width: 3px;
-    height: 3px;
-    background: transparent;
-    box-shadow: $shadows-big;
-  }
-}
-@keyframes animStar {
-  from {
-    transform: translateY(0px);
-  }
-  to {
-    transform: translateY(-2000px);
-  }
-};
-
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials

@@ -12,7 +12,6 @@
   </span>
 </div>
 <script type="module">
-  //import { FirelightAnalytics } from "/assets/js/firelight-analytics.js";
 
   let pageID = "{{ page.id }}";
   pageID = pageID.replace("/blog/", "");
@@ -22,10 +21,6 @@
 
   function init() {
     firelight = null;
-
-    //new FirelightAnalytics({
-    //    endpoint: '{{ site.data.firelightdata.request-origin }}'
-    //});
 
     let likeButton = document.querySelector("#like-post-button");
     let dislikeButton = document.querySelector("#dislike-post-button");
