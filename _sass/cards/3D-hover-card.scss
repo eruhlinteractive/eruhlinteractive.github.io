@@ -1,0 +1,19 @@
+.hover-card {
+  padding: 1em;
+  text-align: right;
+  
+  border-radius: 10px;
+  position: relative;
+  transition-duration: 300ms;
+  transition-property: transform, box-shadow;
+  transition-timing-function: ease-out;
+  transform: rotate3d(0);
+}
+
+.hover-card :hover {
+  transition-duration: 150ms;
+}
+
+.hover-card > img:hover{
+    filter:drop-shadow(10px 5px 10px #00000077);
+}

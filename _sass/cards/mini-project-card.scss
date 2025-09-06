@@ -5,7 +5,6 @@
   width: 190px;
   height: 254px;
   perspective: 1000px;
-  font-family: sans-serif;
   padding: 10px 10px;
 }
 
@@ -31,9 +30,9 @@
 
 .flip-card-front > img
 {
-    object-fit: cover;
-    overflow: hidden;
-    border-radius: 1rem;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 1rem;
 }
 
 .flip-card-front, .flip-card-back {
@@ -46,16 +45,17 @@
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  border: 1px solid coral;
+  border: 2px solid $secondary-color;
   border-radius: 1rem;
 }
 
 .flip-card-front {
-  color: coral;
+  color: $secondary-color;
 }
 
 .flip-card-back {
   background-color: $card-background;
-  color: white;
+  color: $text-color;
   transform: rotateY(180deg);
+  padding: 10px;
 }
