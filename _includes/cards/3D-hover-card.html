@@ -1,0 +1,42 @@
+<!-- Source: https://codepen.io/markmiro/pen/wbqMPa -->
+<div class="hover-card">
+  <img src="/assets/images/portrait.png" id="portrait" style="width:400px;" alt="Sleepy Rock's Avatar"/>
+</div>
+<script>
+const $card = document.querySelector('.hover-card');
+let bounds;
+
+function rotateToMouse(e) {
+  const mouseX = e.clientX;
+  const mouseY = e.clientY;
+  const leftX = mouseX - bounds.x;
+  const topY = mouseY - bounds.y;
+
+  const center = {
+    x: leftX - bounds.width / 2,
+    y: topY - bounds.height / 2
+  }
+  const distance = Math.sqrt(center.x**2 + center.y**2);
+  
+  $card.style.transform = `
+    scale3d(1.00, 1.0, 1.0)
+    rotate3d(
+      ${-center.y / 100},
+      ${center.x / 100},
+      0,
+      ${Math.log(distance)* 3.5}deg
+    )
+  `;
+}
+
+$card.addEventListener('mouseenter', () => {
+  bounds = $card.getBoundingClientRect();
+  document.addEventListener('mousemove', rotateToMouse);
+});
+
+$card.addEventListener('mouseleave', () => {
+  document.removeEventListener('mousemove', rotateToMouse);
+  $card.style.transform = '';
+  $card.style.background = '';
+});
+</script>

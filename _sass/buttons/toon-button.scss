@@ -1,0 +1,51 @@
+.toon-button {
+  /* Variables */
+  --button_radius: 0.75em;
+  --button_outline_color: #000000;
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: var(--button_radius);
+}
+
+.toon-button-top {
+  display: block;
+  box-sizing: border-box;
+  border: 2px solid $background-color;
+  border-radius: var(--button_radius);
+  padding: 0.75em 1.5em;
+  //background: $primary-color;
+  //color: $background-color;
+  transform: translateY(-0.2em);
+  transition: transform 0.1s ease;
+}
+
+.toon-button.primary {
+    background: darken($secondary-color,10%);
+}
+
+.toon-button.accent {
+    background: darken($accent-color,10%);
+}
+
+.toon-button-top.primary{
+    color: $background-color;
+    background: $primary-color
+}
+
+.toon-button-top.accent{
+    color: $background-color;
+    background: $accent-color;
+}
+
+.toon-button:hover .toon-button-top {
+  /* Pull the button upwards when hovered */
+  transform: translateY(-0.33em);
+  //transform: translateY(-0.2em);
+}
+
+.toon-button:active .toon-button-top {
+  /* Push the button downwards when pressed */
+  transform: translateY(0);
+}

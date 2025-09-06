@@ -14,7 +14,7 @@ toc: true
 ---
 
 
-Welcome to the first post on my \*new\* website! Although I've had the domain <eruhl-interactive.com> for a few years now, I recently made the switch to hosting on Github Pages! Today I'll cover the why, how, and some of the challenges (and excitement) of making this transition. 
+Welcome to the first post on my \*new\* website! Although I've had the domain for a few years now, I recently made the switch to hosting on Github Pages! Today I'll cover the why, how, and some of the challenges (and excitement) of making this transition. 
 
 # Hello World!
 

@@ -1,20 +1,16 @@
 Ethan Ruhl:
-  name     : "Ethan Ruhl"
+  name     : "Ethan Ruhl<br>(Sleepy Rock Games)"
   avatar   : "/assets/images/portrait.png"
   bio      : "Game developer and programmer who likes to experiment and make computer go brrrr"
   links:
     - label: "Bluesky"
       icon: "fa-brands fa-bluesky"
-      url: "https://bsky.app/profile/eruhlinteractive.bsky.social"
-      
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/erinteractive"
-
+      url: "https://bsky.app/profile/sleepyrockgames.bsky.social"
+    
     - label: "Itch.io"
       icon: "fa-brands fa-itch-io"
-      url: "https://eruhlinteractive.itch.io/"
+      url: "https://sleepyrockgames.itch.io/"
 
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/eruhlinteractive"
+      url: "https://github.com/sleepyrockgames"

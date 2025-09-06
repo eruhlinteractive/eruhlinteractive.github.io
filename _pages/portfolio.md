@@ -24,7 +24,6 @@ show-stars: true
 
  @media screen and (max-width: 900px) 
  {
-    
     #header-intro
     {
         flex-direction: column;
@@ -36,14 +35,15 @@ show-stars: true
     }
  }
 </style>
-# Hey there, I'm Ethan!
+# Hey there, I'm Ethan! 👋
+<p>a.k.a <em>Sleepy Rock Games</em></p>
 
 <div style="display:flex" id="header-intro">
     <div id="column-left" style="flex-basis: 50%; flex-grow:5;">
 
-I'm a game developer and passionate programmer with many years of experience working and experimenting in all domains related to game development! Programming and game development have always fascinated me, so it's only fitting I made it my career.
+I'm a game developer and passionate programmer with many years of experience working and experimenting in all domains related to game development! Programming and game development have always fascinated me, so I decided to make it my career!
 <br><br>
- I love to work on passion projects and experiment with the unique abilities of the art form, focusing on creating engaging experiences for everyone! A lot of my experience with game development has been programming focused, but I always enjoy experimenting with the artistic domains such as art and music creation to see what I can come up with.
+ I love to work on passion projects and experiment with the unique abilities of the art form, focusing on creating engaging experiences for everyone! A lot of my experience with game development has been programming focused, but I always enjoy experimenting with the artistic domains of development to see what I can come up with.
     </div>
     <div id="column-right">
         <img src="/assets/images/portrait.png" style="width:300px; clip-path:circle(50% at 150px 150px);" alt="E-Ruhl Interactive's Avatar">
@@ -60,7 +60,6 @@ That being said, my main focus (and what I studied to do :wink:) has always been
 
 # What I'm Looking For
 Being a recent graduate of a game development program, my main focus for my job search is finding a position that fosters a learning environment with other passionate individuals. There is *so* much I want to learn about game development, and I believe the best way to do that is with other awesome people who love their craft.
- 
 -->
 
 
@@ -72,7 +71,7 @@ I have worked on a *lot* of projects professionally and personally over the past
     title-id="wander-vyrosa"
     title="Wander Vyrosa"
     about="Wander Vyrosa is a rogue-lite tower defense game set on fully traversable planets. Inspired by games such as Super Mario Galaxy and Bloons TD,
-    this project started as a game jam game titled [Untitled Space Game](https://eruhlinteractive.itch.io/untitled-space-game). Wander Vyrosa was built in the open-source Godot Game engine using C# and GDScript by a small team and published on Steam in March 2023.<br><br>   **Roles**: Gameplay Programmer, Systems Programmer, 2D/3D Artist, Producer, Audio Designer/Engineer<br> <br> [Visit Wander Vyrosa Website](https://wandervyrosa.com/)" 
+    this project started as a game jam game titled [Untitled Space Game](https://sleepyrockgames.itch.io/untitled-space-game). Wander Vyrosa was built in the open-source Godot Game engine using C# and GDScript by a small team and published on Steam in March 2023.<br><br>   **Roles**: Gameplay Programmer, Systems Programmer, 2D/3D Artist, Producer, Audio Designer/Engineer<br> <br> [Visit Wander Vyrosa Website](https://wandervyrosa.com/)" 
 %}
 
 {% include full-page-project.html 
@@ -103,7 +102,7 @@ If you have any questions about my experience, feel free to reach out to me via 
 Also, feel free to check out my other work via my social media accounts! <br>
 <ul>
     <li><i class="fa-brands fa-mastodon fa-xl" aria-hidden="true"></i> <a href="https://mastodon.gamedev.place/@erinteractive" > Mastodon @erinteractive</a></li>
-    <li><i class="fab fa-github fa-xl" aria-hidden="true"></i> <a href="https://github.com/eruhlinteractive" > Github</a></li>
+    <li><i class="fab fa-github fa-xl" aria-hidden="true"></i> <a href="https://github.com/sleepyrockgames" > Github</a></li>
     <li><i class="fa-brands fa-linkedin fa-xl" aria-hidden="true"></i> <a href="https://linkedin.com/in/ethan-ruhl" > Linkedin</a></li>
-    <li><i class="fa-brands fa-itch-io fa-xl" aria-hidden="true"></i> <a href="https://eruhlinteractive.itch.io/"> Itch.io</a></li>
+    <li><i class="fa-brands fa-itch-io fa-xl" aria-hidden="true"></i> <a href="https://sleepyrockgames.itch.io/"> Itch.io</a></li>
 </ul>

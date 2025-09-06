@@ -25,7 +25,7 @@ Please note that some were not completely finished or may not be playable, howev
     title-id="wander-vyrosa"
     title="Wander Vyrosa"
     about="Wander Vyrosa is a rogue-lite tower defense game set on fully traversable planets. Inspired by games such as Super Mario Galaxy and Bloons TD,
-    this project started as a game jam game titled [Untitled Space Game](https://eruhlinteractive.itch.io/untitled-space-game). Wander Vyrosa was built in the open-source Godot Game engine using C# and GDScript by a small team and published on Steam in March 2023.<br><br>   **Roles**: Gameplay Programmer, Systems Programmer, 2D/3D Artist, Producer, Audio Designer/Engineer<br> <br> [More information](https://wandervyrosa.com/)" 
+    this project started as a game jam game titled [Untitled Space Game](https://sleepyrockgames.itch.io/untitled-space-game). Wander Vyrosa was built in the open-source Godot Game engine using C# and GDScript by a small team and published on Steam in March 2023.<br><br>   **Roles**: Gameplay Programmer, Systems Programmer, 2D/3D Artist, Producer, Audio Designer/Engineer<br> <br> [More information](https://wandervyrosa.com/)" 
 %}
 
 {% include full-page-project.html 
@@ -56,5 +56,5 @@ Please note that some were not completely finished or may not be playable, howev
 {% include full-page-project.html 
     title-id="office-racer"
     title="Office Chair Racer"
-    about="Office Chair Racer is a racing game prototype I made in the Godot Game engine. The challenge of this project was developing the racer AI, as my goal was to create a challenging racer that doesn't feel unfair. As a result of this, the computer racers take in information about the curvature of the track and process it in realtime to figure out which way to turn.<br><br>**Roles:** Sole Developer <br><br>[Visit Page](https://eruhlinteractive.itch.io/office-chair-racer)"
+    about="Office Chair Racer is a racing game prototype I made in the Godot Game engine. The challenge of this project was developing the racer AI, as my goal was to create a challenging racer that doesn't feel unfair. As a result of this, the computer racers take in information about the curvature of the track and process it in realtime to figure out which way to turn.<br><br>**Roles:** Sole Developer <br><br>[Visit Page](https://sleepyrockgames.itch.io/office-chair-racer)"
 %}

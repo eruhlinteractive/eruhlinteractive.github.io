@@ -1,0 +1,22 @@
+.gradient-card-outer {
+ background-image: linear-gradient(120deg, $primary-color 0%, $accent-color 100%);
+ border-radius: 20px;
+ transition: all .3s;
+}
+
+.gradient-card-inner {
+ padding: 25px;
+ margin:5px;
+ background-color: $card-background;
+ border-radius:15px;
+ transition: all .2s;
+ /*transform: scale(0.98); */
+}
+
+.gradient-card-inner:hover {
+ border-radius: 20px;
+}
+
+.gradient-card-outer:hover {
+ box-shadow: 0px 0px 30px 1px $secondary-color;
+}
