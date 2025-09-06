@@ -93,7 +93,7 @@ show-stars: true
         description="An online multiplayer FPS created in 10 days"
         img="/assets/images/project-thumbnails/slime-thumb.png"
         alt="The main slime character"
-        link="/projects/#project-display-slime"
+        link="/projects#project-display-slime"
     %}
 
     {% include mini-project.html
@@ -101,14 +101,14 @@ show-stars: true
         description="A commercial remake and release of the game jam game titled \"Untitled Space Game\""
         img="/assets/images/project-thumbnails/vyrosa-thumb.webp"
         alt="A planet from the game Wander Vyrosa"
-        link="/projects/#project-display-wander-vyrosa"
+        link="/projects#project-display-wander-vyrosa"
     %}
 
     {% include mini-project.html
         title="Grill Daddy" description="A physics based grill-em-up made for the 2022 ROC Game Dev Summer game jam"
         img="/assets/images/project-thumbnails/gd_thumb.webp"
         alt="The grill from the game Grill Daddy"
-        link="/projects/#project-display-grill-daddy"
+        link="/projects#project-display-grill-daddy"
     %}
 
 </div>
