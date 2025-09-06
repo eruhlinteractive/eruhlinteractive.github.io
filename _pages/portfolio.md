@@ -101,8 +101,6 @@ If you have any questions about my experience, feel free to reach out to me via 
 
 Also, feel free to check out my other work via my social media accounts! <br>
 <ul>
-    <li><i class="fa-brands fa-mastodon fa-xl" aria-hidden="true"></i> <a href="https://mastodon.gamedev.place/@erinteractive" > Mastodon @erinteractive</a></li>
     <li><i class="fab fa-github fa-xl" aria-hidden="true"></i> <a href="https://github.com/sleepyrockgames" > Github</a></li>
-    <li><i class="fa-brands fa-linkedin fa-xl" aria-hidden="true"></i> <a href="https://linkedin.com/in/ethan-ruhl" > Linkedin</a></li>
     <li><i class="fa-brands fa-itch-io fa-xl" aria-hidden="true"></i> <a href="https://sleepyrockgames.itch.io/"> Itch.io</a></li>
 </ul>
