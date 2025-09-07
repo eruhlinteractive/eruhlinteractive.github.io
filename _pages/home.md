@@ -98,7 +98,7 @@ show-stars: true
 
     {% include mini-project.html
         title="Wander Vyrosa"
-        description="A commercial remake and release of the game jam game titled \"Untitled Space Game\""
+        description="A 3D tower defense game set on spherical planets"
         img="/assets/images/project-thumbnails/vyrosa-thumb.webp"
         alt="A planet from the game Wander Vyrosa"
         link="/projects#project-display-wander-vyrosa"
