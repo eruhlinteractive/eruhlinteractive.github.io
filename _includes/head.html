@@ -13,8 +13,16 @@
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
 </script>
 
-<!-- Umami Analytics -->
-<!-- <script defer src="http://analytics.eruhl-interactive.com/script.js" data-website-id="51b0d30f-5074-4a0c-a4ad-2e089136b787"></script> -->
+<!-- LibreCounter Analytics -->
+<script>
+  
+  function trackVisit()
+  {
+    fetch("https://librecounter.org/count?url=https://sleepyrockgames.com{{ page.url }}");
+  }
+  
+trackVisit();
+</script>
 
 <!-- For all browsers -->
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
